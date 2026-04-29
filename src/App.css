@@ -41,7 +41,8 @@ button:disabled {
 
 .app-shell {
   display: grid;
-  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  position: relative;
+  grid-template-rows: auto auto minmax(0, 1fr) 132px;
   gap: 14px;
   height: 100vh;
   height: 100dvh;
@@ -406,9 +407,20 @@ textarea:focus {
 }
 
 .history-drawer {
+  z-index: 5;
   min-height: 0;
   padding: 14px;
-  overflow: auto;
+  overflow: hidden;
+}
+
+.history-drawer:has(details[open]) {
+  position: absolute;
+  right: 0;
+  bottom: 20px;
+  left: 0;
+  height: auto;
+  max-height: calc(100dvh - 120px);
+  overflow: visible;
 }
 
 .history-title h2 {
@@ -516,6 +528,14 @@ dd {
     min-height: auto;
   }
 
+  .history-drawer,
+  .history-drawer:has(details[open]) {
+    position: static;
+    height: auto;
+    max-height: none;
+    overflow: visible;
+  }
+
   .wheel span {
     transform: rotate(var(--sector-angle)) translateY(-36vw) rotate(calc(var(--sector-angle) * -1));
   }
@@ -527,6 +547,7 @@ dd {
   }
 
   .app-shell {
+    grid-template-rows: auto auto minmax(0, 1fr) 104px;
     gap: 10px;
     padding: 12px 0;
   }
@@ -608,6 +629,11 @@ dd {
     padding: 10px 14px;
   }
 
+  .history-drawer:has(details[open]) {
+    bottom: 12px;
+    max-height: calc(100dvh - 86px);
+  }
+
   .history-title h2 {
     font-size: 1.15rem;
   }
@@ -641,6 +667,7 @@ dd {
   .wheel-stage,
   .question-panel,
   .history-drawer {
+    height: auto;
     padding: 18px;
   }
 
