@@ -494,15 +494,6 @@ function App() {
                       Pause
                     </button>
                   )}
-                  <button
-                    type="button"
-                    className={
-                      game.activeRound.remaining === 0 ? 'emphasis-button' : ''
-                    }
-                    onClick={revealAnswer}
-                  >
-                    Reveal early
-                  </button>
                 </div>
               </div>
 
@@ -520,7 +511,11 @@ function App() {
                 <div className="action-row">
                   <button
                     type="button"
-                    className="primary-button"
+                    className={
+                      game.activeRound.remaining === 0
+                        ? 'primary-button emphasis-button'
+                        : 'primary-button'
+                    }
                     onClick={revealAnswer}
                   >
                     Reveal Answer
