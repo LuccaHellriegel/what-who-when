@@ -15,7 +15,7 @@ textarea {
 }
 
 button {
-  min-height: 44px;
+  min-height: 40px;
   border: 1px solid rgba(212, 175, 55, 0.38);
   border-radius: 8px;
   background: rgba(248, 245, 236, 0.08);
@@ -40,17 +40,21 @@ button:disabled {
 }
 
 .app-shell {
-  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr) auto;
+  gap: 14px;
+  height: 100vh;
+  height: 100dvh;
   width: min(1440px, calc(100% - 48px));
   margin: 0 auto;
-  padding: 28px 0;
+  padding: 20px 0;
+  overflow: hidden;
 }
 
 .game-header {
   display: grid;
   justify-items: center;
   gap: 8px;
-  margin-bottom: 18px;
   text-align: center;
 }
 
@@ -74,7 +78,7 @@ p {
 h1 {
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: clamp(2.4rem, 5vw, 5.8rem);
+  font-size: clamp(2.2rem, 4.4vw, 5rem);
   font-weight: 700;
   line-height: 0.96;
   text-shadow: 0 20px 70px rgba(212, 175, 55, 0.22);
@@ -85,7 +89,7 @@ h1 span {
   color: var(--gold);
   font-size: clamp(1.1rem, 2vw, 1.8rem);
   letter-spacing: 0.18em;
-  margin-top: 10px;
+  margin-top: 8px;
   text-transform: uppercase;
 }
 
@@ -100,8 +104,7 @@ h2 {
   grid-template-columns: minmax(120px, 1fr) auto minmax(120px, 1fr) auto auto;
   align-items: center;
   gap: 12px;
-  margin-bottom: 18px;
-  padding: 14px;
+  padding: 10px;
   border: 1px solid rgba(212, 175, 55, 0.24);
   border-radius: 8px;
   background: rgba(18, 26, 46, 0.88);
@@ -113,7 +116,7 @@ h2 {
   align-items: baseline;
   justify-content: space-between;
   gap: 18px;
-  padding: 14px 16px;
+  padding: 10px 14px;
   border-radius: 8px;
   background: rgba(255, 255, 255, 0.04);
 }
@@ -128,20 +131,20 @@ h2 {
 
 .scoreboard strong {
   color: var(--gold);
-  font-size: 1.8rem;
+  font-size: 1.55rem;
 }
 
 .scoreboard p {
   color: var(--text);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 2rem;
+  font-size: 1.75rem;
   white-space: nowrap;
 }
 
 .round-pill {
   justify-self: center;
   min-width: 94px;
-  padding: 12px 14px;
+  padding: 10px 14px;
   border: 1px solid rgba(212, 175, 55, 0.28);
   border-radius: 999px;
   text-align: center;
@@ -154,7 +157,6 @@ h2 {
 .final-summary {
   display: grid;
   gap: 4px;
-  margin-bottom: 18px;
   padding: 16px 18px;
   border: 1px solid rgba(212, 175, 55, 0.45);
   border-radius: 8px;
@@ -171,6 +173,7 @@ h2 {
   grid-template-columns: minmax(360px, 0.95fr) minmax(420px, 1.05fr);
   gap: 18px;
   align-items: stretch;
+  min-height: 0;
 }
 
 .wheel-stage,
@@ -188,14 +191,14 @@ h2 {
   position: relative;
   display: grid;
   place-items: center;
-  min-height: 560px;
-  padding: 36px;
+  min-height: 0;
+  padding: 28px;
   overflow: hidden;
 }
 
 .pointer {
   position: absolute;
-  top: 28px;
+  top: 20px;
   z-index: 2;
   width: 0;
   height: 0;
@@ -209,7 +212,9 @@ h2 {
   position: relative;
   display: grid;
   place-items: center;
-  width: min(430px, 76vw);
+  --label-offset: clamp(-155px, -12.5vw, -102px);
+  width: min(410px, 32vw, calc(100dvh - 340px));
+  min-width: 300px;
   aspect-ratio: 1;
   min-height: auto;
   border: 10px solid var(--gold);
@@ -245,7 +250,7 @@ h2 {
   height: 38px;
   color: var(--text);
   font-weight: 800;
-  transform: rotate(var(--sector-angle)) translateY(-164px) rotate(calc(var(--sector-angle) * -1));
+  transform: rotate(var(--sector-angle)) translateY(var(--label-offset)) rotate(calc(var(--sector-angle) * -1));
 }
 
 .wheel strong {
@@ -263,15 +268,16 @@ h2 {
 
 .wheel-caption {
   position: absolute;
-  bottom: 24px;
+  bottom: 18px;
 }
 
 .question-panel {
   display: grid;
   align-content: start;
-  gap: 18px;
-  min-height: 560px;
-  padding: 28px;
+  gap: 14px;
+  min-height: 0;
+  overflow: auto;
+  padding: 24px;
 }
 
 .question-meta,
@@ -295,7 +301,7 @@ h2 {
   align-items: center;
   justify-content: space-between;
   gap: 16px;
-  padding: 16px;
+  padding: 12px;
   border: 1px solid rgba(154, 164, 178, 0.22);
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.2);
@@ -304,7 +310,7 @@ h2 {
 .timer strong {
   color: var(--gold);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 3rem;
+  font-size: 2.55rem;
   line-height: 1;
 }
 
@@ -337,7 +343,7 @@ h2 {
 
 textarea {
   width: 100%;
-  min-height: 130px;
+  min-height: 96px;
   resize: vertical;
   border: 1px solid rgba(154, 164, 178, 0.28);
   border-radius: 8px;
@@ -371,7 +377,7 @@ textarea:focus {
 .reveal-panel {
   display: grid;
   gap: 12px;
-  padding: 18px;
+  padding: 14px;
   border: 1px solid rgba(212, 175, 55, 0.34);
   border-radius: 8px;
   background: rgba(212, 175, 55, 0.1);
@@ -390,7 +396,7 @@ textarea:focus {
   display: grid;
   align-content: center;
   justify-items: start;
-  min-height: 500px;
+  min-height: 100%;
   gap: 12px;
 }
 
@@ -400,8 +406,9 @@ textarea:focus {
 }
 
 .history-drawer {
-  margin-top: 18px;
-  padding: 18px;
+  min-height: 0;
+  padding: 14px;
+  overflow: auto;
 }
 
 .history-title h2 {
@@ -412,7 +419,7 @@ textarea:focus {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   gap: 10px;
-  margin-top: 14px;
+  margin-top: 10px;
 }
 
 .history-row {
@@ -428,7 +435,7 @@ textarea:focus {
   align-items: center;
   justify-content: space-between;
   gap: 10px;
-  min-height: 54px;
+  min-height: 46px;
   padding: 0 14px;
 }
 
@@ -485,6 +492,10 @@ dd {
 
 @media (max-width: 1020px) {
   .app-shell {
+    display: block;
+    height: auto;
+    min-height: 100vh;
+    overflow: visible;
     width: min(100% - 32px, 820px);
   }
 
@@ -510,6 +521,109 @@ dd {
   }
 }
 
+@media (max-height: 820px) and (min-width: 1021px) {
+  button {
+    min-height: 36px;
+  }
+
+  .app-shell {
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  .game-header {
+    gap: 4px;
+  }
+
+  .kicker {
+    font-size: 0.7rem;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 3.4vw, 3.7rem);
+  }
+
+  h1 span {
+    font-size: clamp(0.95rem, 1.3vw, 1.2rem);
+    margin-top: 4px;
+  }
+
+  h2 {
+    font-size: clamp(1.25rem, 1.75vw, 1.75rem);
+  }
+
+  .scoreboard {
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .scoreboard div {
+    padding: 8px 12px;
+  }
+
+  .scoreboard strong,
+  .scoreboard p {
+    font-size: 1.35rem;
+  }
+
+  .round-pill {
+    padding: 8px 12px;
+  }
+
+  .wheel-stage {
+    padding: 22px;
+  }
+
+  .wheel {
+    --label-offset: clamp(-134px, -10vw, -102px);
+    width: min(360px, 27vw, calc(100dvh - 320px));
+  }
+
+  .wheel strong {
+    width: 96px;
+    font-size: 1.15rem;
+  }
+
+  .pointer {
+    top: 14px;
+    border-right-width: 14px;
+    border-left-width: 14px;
+    border-top-width: 28px;
+  }
+
+  .question-panel {
+    gap: 10px;
+    padding: 18px;
+  }
+
+  .timer strong {
+    font-size: 2.2rem;
+  }
+
+  textarea {
+    min-height: 78px;
+  }
+
+  .history-drawer {
+    padding: 10px 14px;
+  }
+
+  .history-title h2 {
+    font-size: 1.15rem;
+  }
+
+  .history-list {
+    grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .history-row summary,
+  .history-row.active {
+    min-height: 38px;
+  }
+}
+
 @media (max-width: 620px) {
   .app-shell {
     width: min(100% - 24px, 520px);
@@ -531,7 +645,8 @@ dd {
   }
 
   .wheel {
-    width: min(330px, 78vw);
+    min-width: 0;
+    width: min(300px, 78vw);
   }
 
   .timer strong {
