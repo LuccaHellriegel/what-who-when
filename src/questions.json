@@ -19,27 +19,27 @@
   },
   {
     "id": "Q-04",
-    "text": "Was hat einen Hals, aber keinen Kopf?",
-    "answer": "Eine Flasche.",
-    "explanation": "Der obere, schmale Teil einer Flasche wird Flaschenhals genannt."
+    "text": "In einem alten Theater kosteten manche Logen mehr als Plätze mit besserer Sicht auf die Bühne. Die Käufer beschwerten sich nicht. Wofür bezahlten sie vor allem?",
+    "answer": "Dafür, selbst gut gesehen zu werden.",
+    "explanation": "Logen waren auch gesellschaftliche Schauplätze. Für manche Gäste war die Sichtbarkeit im Publikum wichtiger als der Blick auf die Bühne."
   },
   {
     "id": "Q-05",
-    "text": "Homer Simpson zeichnet einen Kreis mit einem Punkt in der Mitte, um Zugang zu einem geheimen Raum zu bekommen. Wofür dient diese Zeichnung?",
-    "answer": "Als Muster für einen Augenscanner.",
-    "explanation": "Der Kreis mit Punkt erinnert an ein Auge mit Pupille. Die Zeichnung soll den Scanner täuschen."
+    "text": "Jemand hält einem Zugangsscanner eine Zeichnung hin: einen Kreis mit einem Punkt in der Mitte. Der Scanner soll dadurch getäuscht werden. Was soll die Zeichnung darstellen?",
+    "answer": "Ein Auge mit Pupille.",
+    "explanation": "Der Kreis steht für das Auge, der Punkt für die Pupille. Die Zeichnung soll wie ein sehr grobes Augenmuster wirken."
   },
   {
     "id": "Q-06",
-    "text": "Jemand beschwert sich, dass durch die offenen Fenster „fliegende Mäuse“ hereinkamen. Welche Tiere waren es wirklich?",
+    "text": "Ein Forscher stellte in einer Höhle seine Zählstation nicht dort auf, wo die Tiere hingen, sondern am Ausgang. Er zählte vor allem dunkle Umrisse gegen den Abendhimmel. Welche Tiere zählte er?",
     "answer": "Fledermäuse.",
-    "explanation": "Der Name „Fledermaus“ klingt zwar nach Maus, bezeichnet aber ein fliegendes Säugetier."
+    "explanation": "Fledermäuse verlassen Höhlen oft in der Dämmerung. Gegen den helleren Himmel lassen sie sich leichter zählen als im Inneren der Höhle."
   },
   {
     "id": "Q-07",
-    "text": "Welches deutsche Wort wird länger, wenn man zwei Buchstaben davorsetzt, und beschreibt danach, dass etwas nicht lang genug ist?",
-    "answer": "„Kurz“ – mit „zu“ davor wird daraus „zu kurz“.",
-    "explanation": "Die Schreibweise wird länger, die Bedeutung beschreibt aber etwas, das kürzer ist als nötig."
+    "text": "Ein Bäcker schneidet Brotteig vor dem Backen absichtlich tief ein. Der Schnitt ist nicht Dekoration und macht das Brot nicht haltbarer. Was verhindert er?",
+    "answer": "Dass das Brot an einer unkontrollierten Stelle aufreißt.",
+    "explanation": "Beim Backen dehnt sich der Teig aus und Dampf entweicht. Der Schnitt gibt dem Brot eine kontrollierte Stelle zum Aufgehen."
   },
   {
     "id": "Q-08",
@@ -49,9 +49,9 @@
   },
   {
     "id": "Q-09",
-    "text": "In einer Schule wartet eine Gruppe schweigend vor einem Raum. Ein Lehrer kommt mit einer Zeitung heraus; niemand liest einen Artikel, trotzdem klatschen alle. Was steht in der Zeitung?",
+    "text": "In einer Schule wartet eine Gruppe schweigend vor einem Raum. Ein Lehrer kommt mit einem bedruckten Blatt heraus; niemand liest einen Artikel, trotzdem klatschen alle. Was steht auf dem Blatt?",
     "answer": "Eine Liste mit bestandenen Prüfungen oder aufgenommenen Kandidaten.",
-    "explanation": "„Zeitung“ meint hier den Aushang oder das gedruckte Blatt mit den Ergebnissen. Die Gruppe reagiert auf die Namen, nicht auf eine Nachricht."
+    "explanation": "Die Gruppe reagiert auf die Namen und Ergebnisse, nicht auf einen Nachrichtentext."
   },
   {
     "id": "Q-10",
@@ -61,21 +61,21 @@
   },
   {
     "id": "Q-11",
-    "text": "Wann werden Steine nicht gesammelt oder geworfen, sondern statt dessen gefegt?",
-    "answer": "Beim Curling.",
-    "explanation": "Beim Curling werden die Steine mit Bürsten vor dem Stein ‚gefegt‘, damit sie weiter gleiten."
+    "text": "Bei einem Wettkampf fegen zwei Menschen hektisch vor einem schweren Stein, obwohl niemand den Boden reinigen will. Welche Eigenschaft der Bahn verändern sie?",
+    "answer": "Die Reibung des Eises.",
+    "explanation": "Beim Curling erwärmt und glättet das Wischen die Eisoberfläche leicht. Der Stein gleitet dadurch weiter und kontrollierter."
   },
   {
     "id": "Q-12",
-    "text": "Anton Tschechow sagte, eine menschliche Eigenschaft trete dann zutage, wenn man eine Handlung mit möglichst wenigen Bewegungen ausführt. Welche Eigenschaft meinte er?",
-    "answer": "Anmut.",
-    "explanation": "Anmut (Grazie) zeigt sich in sparsamen, fließenden Bewegungen."
+    "text": "Auf manchen Bahnhofsuhren bleibt der Sekundenzeiger kurz vor der vollen Minute stehen und springt erst dann weiter. Das ist kein Defekt. Wozu dient die Pause?",
+    "answer": "Zur Synchronisierung der Uhren.",
+    "explanation": "Die Uhr wartet kurz auf das zentrale Minutensignal. So springen viele Bahnhofsuhren gleichzeitig auf die nächste Minute."
   },
   {
     "id": "Q-13",
-    "text": "Juri Gagarin sagte einmal: „Ich bin ein einfacher Sterblicher; vor mir haben 11 174 Menschen etwas Großartiges geleistet.“ Wen meinte er damit?",
-    "answer": "Die Menschen, die vor ihm den Titel „Held der Sowjetunion“ erhielten.",
-    "explanation": "Gagarin war der 11 175. Held der Sowjetunion."
+    "text": "Ein Seefahrer im 18. Jahrhundert bewahrte an Bord eine Uhr auf, die absichtlich nicht auf die Ortszeit gestellt wurde. Gerade dadurch konnte er seine Ost-West-Position bestimmen. Welche Zeit musste die Uhr anzeigen?",
+    "answer": "Die Zeit eines festen Referenzortes, zum Beispiel Greenwich.",
+    "explanation": "Aus der Differenz zwischen Ortsmittag und Referenzzeit lässt sich der Längengrad berechnen."
   },
   {
     "id": "Q-14",
@@ -97,9 +97,9 @@
   },
   {
     "id": "Q-17",
-    "text": "Ein Fußballschiedsrichter prüfte vor jedem Spiel seine Ausrüstung: gelbe Karte, rote Karte, Münze und Pfeife. Was konnte er trotzdem nie zu Hause vergessen, solange er selbst zum Spiel kam?",
-    "answer": "Seine Augen.",
-    "explanation": "Alle Ausrüstungsstücke konnte er liegen lassen. Seine Augen brauchte er zum Leiten des Spiels und brachte sie zwangsläufig mit."
+    "text": "Ein Tennisspieler schlägt auf. Der Ball berührt das Netz, landet aber korrekt im Aufschlagfeld. Der Schiedsrichter gibt weder Punkt noch Fehler. Was passiert stattdessen?",
+    "answer": "Der Aufschlag wird wiederholt.",
+    "explanation": "Ein Netzaufschlag, der im richtigen Feld landet, ist ein Let. Der Ballwechsel beginnt mit diesem Aufschlag noch einmal."
   },
   {
     "id": "Q-18",
@@ -151,15 +151,15 @@
   },
   {
     "id": "Q-26",
-    "text": "Ein Stuntman zieht bei manchen Drehs Schuhe an die Hände. Welche Körperteile sollen seine Hände dann im Bild darstellen?",
-    "answer": "Füße.",
-    "explanation": "In Nahaufnahmen oder gefährlichen Einstellungen können Hände mit Schuhen so gefilmt werden, dass sie wie Füße wirken."
+    "text": "Ein Filmteam besprüht nachts eine Straße mit Wasser, obwohl die Szene nicht im Regen spielt. Warum sieht die Aufnahme dadurch oft besser aus?",
+    "answer": "Weil nasser Asphalt Licht stärker reflektiert.",
+    "explanation": "Die Reflexe von Lampen und Scheinwerfern geben der dunklen Straße Konturen und Tiefe. Trockenes Schwarz wirkt im Bild oft flach."
   },
   {
     "id": "Q-27",
-    "text": "Ein Sammler bezahlt für eine Zeitung von gestern mehr als für die heutige Ausgabe. Sie enthält keine seltene Meldung und keinen Druckfehler. Warum ist sie ihm trotzdem mehr wert?",
-    "answer": "Sie ist Teil eines Archivs oder stammt von einem bestimmten persönlichen Datum.",
-    "explanation": "Der Wert liegt nicht in der Aktualität, sondern im Datum der Ausgabe, zum Beispiel einem Geburtstag, Jubiläum oder historischen Tag."
+    "text": "Ein Fotograf belichtete einen belebten Platz sehr lange. Auf dem fertigen Bild sieht der Platz fast menschenleer aus, obwohl niemand weggeschickt wurde. Warum?",
+    "answer": "Die Menschen bewegten sich während der langen Belichtung.",
+    "explanation": "Unbewegliche Gebäude sammeln sich scharf im Bild. Bewegte Personen hinterlassen nur schwache Spuren oder verschwinden fast ganz."
   },
   {
     "id": "Q-28",
@@ -169,9 +169,9 @@
   },
   {
     "id": "Q-29",
-    "text": "Ein Übersetzer ließ in einer deutschen Ausgabe ein fremdes Wort unübersetzt stehen. Gerade dadurch verstanden die Leser die Pointe besser. Wann ist das sinnvoll?",
-    "answer": "Wenn das fremde Wort im Deutschen selbst bekannt ist oder als Fremdwort die Pointe trägt.",
-    "explanation": "Manchmal ist die wörtliche Übersetzung schlechter als das bekannte Lehnwort. Die Verständlichkeit hängt dann am wiedererkennbaren Originalausdruck."
+    "text": "In einer deutschen Krimiübersetzung wechseln zwei Figuren plötzlich von „Sie“ zu „du“. Im englischen Original musste derselbe Hinweis umständlicher erklärt werden. Was verrät der Wechsel?",
+    "answer": "Dass die Figuren vertrauter miteinander sind, als sie nach außen zeigen.",
+    "explanation": "Deutsch kann mit „Sie“ und „du“ soziale Distanz oder Nähe markieren. Der Wechsel kann eine verborgene Beziehung andeuten."
   },
   {
     "id": "Q-30",
@@ -181,15 +181,15 @@
   },
   {
     "id": "Q-31",
-    "text": "Ein Mann zeigt auf ein Porträt und sagt: „Ich habe keine Brüder. Der Vater des Mannes auf diesem Bild ist der Sohn meines Vaters.“ Wer ist auf dem Bild?",
-    "answer": "Sein Sohn.",
-    "explanation": "Da er keine Brüder hat, ist „der Sohn meines Vaters“ der Sprecher selbst. Also ist er der Vater des abgebildeten Mannes."
+    "text": "Ein Astronom rät Anfängerinnen, einen sehr schwachen Stern nachts nicht direkt anzuschauen, sondern knapp daneben. Warum sieht man ihn dann besser?",
+    "answer": "Weil die Netzhaut außerhalb der Blickmitte lichtempfindlicher für schwaches Licht ist.",
+    "explanation": "In der Blickmitte sitzen vor allem Zapfen für Schärfe und Farbe. Etwas daneben arbeiten mehr Stäbchen, die bei Dunkelheit empfindlicher sind."
   },
   {
     "id": "Q-32",
-    "text": "Ein Händler verkauft ein Kilogramm Federn und ein Kilogramm Blei. Der Käufer trägt beides nach Hause und sagt, die Federn seien schwerer gewesen. Wie kann er recht haben?",
-    "answer": "Das Paket mit den Federn war unhandlicher oder hatte schwerere Verpackung.",
-    "explanation": "Das reine Gewicht der Ware ist gleich. Die gefühlte Last oder das Gesamtpaket kann sich trotzdem unterscheiden."
+    "text": "Ein großer Sack Federn und ein kleiner Bleiklotz werden auf einer Balkenwaage in Luft genau ins Gleichgewicht gebracht. Danach stellt man die Waage in ein Vakuum. Welche Seite sinkt?",
+    "answer": "Die Seite mit den Federn.",
+    "explanation": "In Luft bekommen die voluminösen Federn mehr Auftrieb. Wenn dieser Auftrieb im Vakuum wegfällt, zeigt sich, dass ihre tatsächliche Masse größer sein musste."
   },
   {
     "id": "Q-33",
@@ -205,9 +205,9 @@
   },
   {
     "id": "Q-35",
-    "text": "Ein Geschäftsmann parkte seinen BMW mitten auf einem öffentlich zugänglichen Platz, ohne einen Strafzettel zu bekommen. Wie war das möglich?",
-    "answer": "Der Platz gehörte ihm.",
-    "explanation": "Als Besitzer des Platzes durfte er dort parken."
+    "text": "Ein Mann ließ seinen teuren Wagen zwei Wochen auf dem Hof einer Bank stehen und zahlte danach nur wenige Euro. Für ihn war das billiger als jedes Parkhaus. Was hatte er getan?",
+    "answer": "Er hatte einen kleinen Kredit aufgenommen und den Wagen als Sicherheit hinterlegt.",
+    "explanation": "Die Bank bewahrte das Pfand, bis er den Kredit samt geringer Gebühren zurückzahlte. Praktisch nutzte er die Bank als sehr billigen Parkplatz."
   },
   {
     "id": "Q-36",
@@ -223,15 +223,15 @@
   },
   {
     "id": "Q-38",
-    "text": "Ein Maler lässt auf einem Gruppenbild eine Person weg, obwohl sie die wichtigste Auftraggeberin ist. Gerade dadurch erkennt jeder im Raum, wer sie ist. Wie kann das sein?",
-    "answer": "Die Auftraggeberin ist die Betrachterin oder Besitzerin des Bildes.",
-    "explanation": "Wenn das Bild an ihrem Platz hängt oder ihr gegenüber gezeigt wird, ist ihre Abwesenheit der Hinweis: Alle Dargestellten blicken oder verhalten sich zu ihr."
+    "text": "Ein Maler lässt auf einem Gruppenbild die wichtigste Auftraggeberin weg. Im Raum, für den das Bild bestimmt ist, erkennt trotzdem jeder sofort, wer gemeint ist: Alle dargestellten Personen blicken aus dem Bild heraus. Wo befindet sich die Auftraggeberin?",
+    "answer": "Am realen Platz vor dem Bild.",
+    "explanation": "Das Bild ist auf den Raum bezogen. Die gemalten Personen schauen zu der Stelle, an der die Auftraggeberin sitzt oder steht."
   },
   {
     "id": "Q-39",
-    "text": "Ein Uhrmacher reparierte eine Turmuhr, indem er nicht das Uhrwerk, sondern die Glocke veränderte. Danach zeigte die Uhr für die Bewohner wieder die richtige Zeit. Was war das Problem?",
-    "answer": "Die Bewohner hörten die Uhr, statt sie zu sehen; die falsche Anzahl oder Reihenfolge der Schläge war das eigentliche Zeitzeichen.",
-    "explanation": "Bei einer Turmuhr kann die wahrgenommene Zeit über Glockenschläge vermittelt werden. Wenn die Anzeige stimmt, aber das Läuten falsch ist, muss die Glockensteuerung korrigiert werden."
+    "text": "Die Zeiger einer Turmuhr standen richtig, doch viele Bewohner richteten sich weiterhin nach einer falschen Zeit. Der Uhrmacher änderte danach nicht das Uhrwerk, sondern das Schlagwerk der Glocke. Was war falsch?",
+    "answer": "Die Uhr schlug die falsche Stundenzahl.",
+    "explanation": "Wer die Turmuhr nur hörte, übernahm die Zeit aus den Glockenschlägen. Bei richtig stehenden Zeigern musste also das Läuten korrigiert werden."
   },
   {
     "id": "Q-40",
@@ -253,21 +253,21 @@
   },
   {
     "id": "Q-43",
-    "text": "Ein Arzt notierte bei zwei Patienten denselben Puls, dieselbe Temperatur und denselben Blutdruck. Trotzdem sagte er nur bei einem: „Der Zustand ist normal.“ Warum?",
-    "answer": "Die Patienten waren keine gleichartigen Patienten, zum Beispiel ein Erwachsener und ein Neugeborenes oder Mensch und Tier.",
-    "explanation": "Messwerte sind nur im passenden Vergleichsbereich aussagekräftig. Derselbe Wert kann je nach Patient normal oder auffällig sein."
+    "text": "Ein Arzt misst bei zwei Patienten denselben Puls von 120. Bei einem hält er den Wert für normal, beim anderen alarmiert er sofort das Team. Was unterscheidet die Patienten?",
+    "answer": "Ihr Alter: Der eine ist ein Säugling oder kleines Kind, der andere ein Erwachsener.",
+    "explanation": "Ein Puls von 120 kann bei sehr kleinen Kindern normal sein. Bei Erwachsenen ist derselbe Wert in Ruhe deutlich auffälliger."
   },
   {
     "id": "Q-44",
-    "text": "Ein Setzer bemerkte, dass ein Wort auch dann gleich blieb, wenn er den Druckbogen falsch herum hielt. Welches technische Gerät konnte mit diesem Wort gemeint sein?",
+    "text": "Ein Setzer bemerkte, dass ein Wort auch dann gleich blieb, wenn er die Buchstabenfolge von hinten nach vorn kontrollierte. Welches technische Gerät konnte mit diesem Wort gemeint sein?",
     "answer": "Radar.",
-    "explanation": "„Radar“ ist ein Palindrom. Es liest sich von vorn und hinten gleich, was zu einem falsch herum betrachteten Druckbogen passt."
+    "explanation": "„Radar“ ist ein Palindrom. Es liest sich von vorn und hinten gleich."
   },
   {
     "id": "Q-45",
-    "text": "Ein Museumswärter sah jeden Tag Besucher vor einer leeren Vitrine stehen. Die Vitrine war nicht kaputt, und das ausgestellte Objekt fehlte nicht. Was wurde dort ausgestellt?",
-    "answer": "Etwas Unsichtbares oder nur durch seine Wirkung Erkennbares, zum Beispiel Luft aus einem historischen Ort.",
-    "explanation": "Bei Konzept- oder Erinnerungsausstellungen kann nicht das Objekt selbst sichtbar sein, sondern seine Herkunft, Beschriftung oder Bedeutung."
+    "text": "Ein Museumswärter sah jeden Tag Besucher vor einer scheinbar leeren Vitrine stehen. Die Vitrine war nicht kaputt, und das Exponat fehlte nicht. Was wurde dort ausgestellt?",
+    "answer": "Die Vitrine selbst.",
+    "explanation": "Wenn die historische oder besonders konstruierte Vitrine das Exponat ist, wirkt sie leer, obwohl der ausgestellte Gegenstand direkt vor den Besuchern steht."
   },
   {
     "id": "Q-46",
@@ -277,26 +277,26 @@
   },
   {
     "id": "Q-47",
-    "text": "Ein Wanderer ging den ganzen Tag bergab und kam am Abend doch an einem höher gelegenen Ort an. Wie ist das möglich?",
-    "answer": "Er fuhr oder wurde zwischendurch nach oben gebracht, zum Beispiel mit einer Seilbahn.",
-    "explanation": "Die Aussage beschreibt nur seine Gehstrecken. Zwischen ihnen kann ein Transport Höhenmeter gewonnen haben."
+    "text": "Ein Wanderer geht zehn Kilometer nach Süden, zehn Kilometer nach Osten und zehn Kilometer nach Norden. Danach steht er wieder am Startpunkt. Nenne einen möglichen Startpunkt.",
+    "answer": "Der Nordpol.",
+    "explanation": "Vom Nordpol führt jede Richtung zunächst nach Süden. Nach dem Ostweg auf einem Breitenkreis bringt der Weg nach Norden wieder zum Pol zurück."
   },
   {
     "id": "Q-48",
-    "text": "Ein Wörterbuch enthält ein Wort, das dort immer „falsch“ geschrieben steht, obwohl der Eintrag korrekt ist. Welches Wort ist gemeint?",
-    "answer": "Das Wort „falsch“.",
-    "explanation": "Gemeint ist nicht ein Fehler im Wörterbuch, sondern der Eintrag des Wortes „falsch“ selbst."
+    "text": "Ein Taucher atmet in 30 Metern Tiefe nicht häufiger als an der Oberfläche. Trotzdem leert sich seine Flasche pro Atemzug viel schneller. Warum?",
+    "answer": "Wegen des höheren Umgebungsdrucks.",
+    "explanation": "In der Tiefe muss die Atemluft mit höherem Druck geliefert werden. Dasselbe Lungenvolumen enthält dadurch mehr Luft aus der Flasche."
   },
   {
     "id": "Q-49",
-    "text": "Ein Archäologe freute sich über viele Spuren, die gerade dadurch entstanden waren, dass jemand etwas weggenommen hatte. Was wurde weggenommen?",
-    "answer": "Schritte wurden gemacht.",
-    "explanation": "Wer Schritte macht, nimmt sie im übertragenen Sinn, lässt aber Fußspuren zurück."
+    "text": "Ein Archäologe freute sich über eine Reihe leerer Löcher in einer alten Mauer. Die Löcher waren keine Beschädigung; sie bewiesen, dass dort einmal etwas Tragendes gewesen war. Was hatte dort ursprünglich gesteckt?",
+    "answer": "Holzbalken.",
+    "explanation": "Regelmäßige Balkenlöcher können auf Decken, Gerüste oder andere Holzkonstruktionen hinweisen, die längst vergangen sind."
   },
   {
     "id": "Q-50",
-    "text": "Ein Klavierbauer sagte, sein Instrument habe mehr Tasten als manche Schreibmaschine, könne aber trotzdem keinen einzigen Brief schreiben. Warum ist der Vergleich irreführend?",
-    "answer": "Die Tasten lösen Töne aus, keine Schriftzeichen.",
-    "explanation": "Das gleiche Wort „Taste“ bezeichnet verschiedene Funktionen. Beim Klavier dient es der Musik, nicht dem Schreiben."
+    "text": "Ein Klavierbauer stimmt die Quinten eines Klaviers absichtlich minimal unrein, obwohl er sehr genau arbeitet. Warum klingt das Instrument dadurch insgesamt brauchbarer?",
+    "answer": "Damit man in allen Tonarten spielen kann.",
+    "explanation": "Bei gleichstufiger Stimmung werden kleine Abweichungen verteilt. So schließt sich der Kreis der zwölf Halbtöne, ohne dass einzelne Tonarten extrem falsch klingen."
   }
 ]
