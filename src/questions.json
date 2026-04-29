@@ -1,0 +1,92 @@
+[
+  {
+    "id": "Q-01",
+    "text": "A man enters a room carrying a newspaper. Five minutes later everyone applauds him. Why?",
+    "answer": "He is a conductor entering the concert hall with the evening program, and the orchestra applauds his arrival.",
+    "explanation": "The newspaper is a misdirecting object; the applause is for the person, not for the paper."
+  },
+  {
+    "id": "Q-02",
+    "text": "What can travel around the world while staying in the same corner?",
+    "answer": "A stamp.",
+    "explanation": "It moves from place to place while remaining in the corner of an envelope."
+  },
+  {
+    "id": "Q-03",
+    "text": "A restaurant has a table that is always reserved, but no one ever sits at it. Why is it still useful every night?",
+    "answer": "It is the staff's reservation book or seating chart table.",
+    "explanation": "The word table refers to organized information, not necessarily furniture."
+  },
+  {
+    "id": "Q-04",
+    "text": "A woman looks at a photograph and says, 'Brothers and sisters I have none, but this man's father is my father's son.' Who is in the photograph?",
+    "answer": "Her son.",
+    "explanation": "With no siblings, 'my father's son' means herself if adapted for the speaker, so the man's father is her."
+  },
+  {
+    "id": "Q-05",
+    "text": "Which word becomes shorter when you add two letters to it?",
+    "answer": "Short.",
+    "explanation": "Adding 'er' makes the word 'shorter'."
+  },
+  {
+    "id": "Q-06",
+    "text": "A clock strikes thirteen. What is the most certain conclusion?",
+    "answer": "The clock is unreliable.",
+    "explanation": "It does not prove the time; it proves the instrument cannot be trusted."
+  },
+  {
+    "id": "Q-07",
+    "text": "What belongs to you, but other people use it more than you do?",
+    "answer": "Your name.",
+    "explanation": "People say your name to address or refer to you."
+  },
+  {
+    "id": "Q-08",
+    "text": "A bottle and a cork cost 1 euro and 10 cents together. The bottle costs 1 euro more than the cork. How much does the cork cost?",
+    "answer": "5 cents.",
+    "explanation": "If the cork is 5 cents, the bottle is 1 euro and 5 cents, totaling 1 euro and 10 cents."
+  },
+  {
+    "id": "Q-09",
+    "text": "Two people play five games of chess. Each wins the same number of games, and there are no draws. How is this possible?",
+    "answer": "They were not playing against each other.",
+    "explanation": "Each person played separate opponents."
+  },
+  {
+    "id": "Q-10",
+    "text": "A room has no windows and no doors. Inside are a table and a mirror. How does a person get out?",
+    "answer": "Look in the mirror, see what you saw, take the saw, cut the table in half, and two halves make a whole to climb out.",
+    "explanation": "This is a wordplay riddle: saw, halves, and whole."
+  },
+  {
+    "id": "Q-11",
+    "text": "What gets wetter the more it dries?",
+    "answer": "A towel.",
+    "explanation": "It absorbs water while drying something else."
+  },
+  {
+    "id": "Q-12",
+    "text": "A person pushes a car to a hotel and immediately loses money. What happened?",
+    "answer": "They are playing Monopoly.",
+    "explanation": "The car is a game piece, and the hotel is on the board."
+  },
+  {
+    "id": "Q-13",
+    "text": "What has cities, roads, rivers, and mountains, but no people?",
+    "answer": "A map.",
+    "explanation": "It represents places without containing the real objects."
+  },
+  {
+    "id": "Q-14",
+    "text": "A person is born in 1990 and dies in 1980. How can that be true?",
+    "answer": "The numbers are room numbers, not years.",
+    "explanation": "They were born in room 1990 and died in room 1980."
+  },
+  {
+    "id": "Q-15",
+    "text": "What is full of holes but still holds water?",
+    "answer": "A sponge.",
+    "explanation": "Its porous structure lets it absorb and hold water."
+  }
+]
