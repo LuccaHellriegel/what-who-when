@@ -7,9 +7,9 @@
   },
   {
     "id": "Q-02",
-    "text": "Auf einer alphabetischen Deutschlandkarte wirkt Augsburg näher an Berlin als Aachen. Warum ist das so?",
-    "answer": "Weil „Augsburg“ im Alphabet direkt vor „Berlin“ steht, während „Aachen“ weiter vorn einsortiert wird.",
-    "explanation": "Die Entfernung bezieht sich auf die alphabetische Reihenfolge, nicht auf die reale Geografie."
+    "text": "In einem alphabetisch sortierten Ortsverzeichnis wirkt Augsburg näher an Berlin als Aachen. Warum ist das so?",
+    "answer": "Weil die Nähe nicht geografisch gemeint ist: In der alphabetischen Reihenfolge liegt Augsburg näher bei Berlin als Aachen.",
+    "explanation": "Das Verzeichnis ordnet nach Namen, nicht nach Koordinaten. Aachen steht zwar ebenfalls vor Berlin, ist alphabetisch aber weiter von Berlin entfernt als Augsburg."
   },
   {
     "id": "Q-03",
@@ -25,9 +25,9 @@
   },
   {
     "id": "Q-05",
-    "text": "Jemand hält einem Zugangsscanner eine Zeichnung hin: einen Kreis mit einem Punkt in der Mitte. Der Scanner soll dadurch getäuscht werden. Was soll die Zeichnung darstellen?",
-    "answer": "Ein Auge mit Pupille.",
-    "explanation": "Der Kreis steht für das Auge, der Punkt für die Pupille. Die Zeichnung soll wie ein sehr grobes Augenmuster wirken."
+    "text": "An manchen alten Toreinfahrten stehen unten an den Ecken kurze, schräg gesetzte Steinpfosten. Sie tragen weder Tor noch Dach. Vor welchem Schaden sollten sie schützen?",
+    "answer": "Vor Schäden durch Wagenräder.",
+    "explanation": "Solche Radabweiser lenkten die Räder von Kutschen und Fuhrwerken von Mauerkanten weg, bevor Rad oder Nabe die Ecke beschädigten."
   },
   {
     "id": "Q-06",
@@ -79,9 +79,9 @@
   },
   {
     "id": "Q-14",
-    "text": "Ein Musiker sitzt oft im Flugzeug. Beim Start achtet er weniger auf die Anzeigen als auf die Tonhöhe der Triebwerke. Warum?",
-    "answer": "Er erkennt am Klang, ob die Triebwerke gleichmäßig und normal laufen.",
-    "explanation": "Musiker nehmen Tonhöhen sehr genau wahr. Ein ungewohnter Ton kann auf ein technisches Problem hindeuten."
+    "text": "Ein Pilot ist ausgebildeter Musiker. Beim Start achtet er nicht nur auf die Anzeigen, sondern auch auf die Tonhöhe der Triebwerke. Warum?",
+    "answer": "Er kann am Klang ungewöhnliche Drehzahlen oder ungleichmäßigen Lauf bemerken.",
+    "explanation": "Die Tonhöhe hängt mit der Drehzahl zusammen. Wer sehr gut hört, kann eine auffällige Änderung manchmal zusätzlich zu den Instrumenten wahrnehmen."
   },
   {
     "id": "Q-15",
@@ -91,9 +91,9 @@
   },
   {
     "id": "Q-16",
-    "text": "Warum markierten Polarforscher ihre Versorgungslager mit hohen Fahnenstangen, obwohl die Kisten selbst gut verschlossen waren?",
-    "answer": "Damit sie die Lager im Schnee wiederfinden konnten.",
-    "explanation": "In der weißen Schneelandschaft verschwinden niedrige Kisten schnell aus dem Blick oder werden zugeschneit."
+    "text": "Polarforscher markierten Versorgungslager oft nicht nur mit einer Fahne, sondern mit mehreren Fahnen in einer langen Linie quer zur geplanten Rückroute. Warum half gerade die Linie?",
+    "answer": "Sie vergrößerte die Chance, das Lager wiederzufinden.",
+    "explanation": "Bei Schnee, Nebel oder kleinen Navigationsfehlern konnte man die genaue Stelle leicht verfehlen. Eine quer liegende Fahnenlinie wurde eher gekreuzt und führte dann zum Depot."
   },
   {
     "id": "Q-17",
@@ -103,9 +103,9 @@
   },
   {
     "id": "Q-18",
-    "text": "Neben manchen Mülleimern steht ein flacher Metallrahmen, in den genau große, quadratische Kartons passen. Wozu dient er?",
-    "answer": "Zum Einsammeln von Pizzakartons.",
-    "explanation": "Pizzakartons verstopfen normale Mülleimer schnell. Im Rahmen können sie gestapelt gesammelt werden."
+    "text": "An manchen hohen Schornsteinen oder Antennen sieht man außen spiralförmige Rippen. Sie sind keine Treppe und keine Verzierung. Welches Problem sollen sie verringern?",
+    "answer": "Gefährliche Schwingungen durch Wind.",
+    "explanation": "Die Rippen stören gleichmäßige Wirbelablösungen am Bauwerk. Dadurch gerät der Schornstein oder Mast weniger leicht in starke Schwingung."
   },
   {
     "id": "Q-19",
@@ -127,7 +127,7 @@
   },
   {
     "id": "Q-22",
-    "text": "Der Schriftsteller Kornej Tschukowski lebte neben dem Maler Ilja Repin. Dieser bat ihn gelegentlich, zu einer bestimmten Zeit vorbeizukommen, und bedankte sich danach herzlich. Worin bestand Tschukowskis wertvolle Hilfe?",
+    "text": "Der Schriftsteller Kornej Tschukowski lebte neben dem Maler Ilja Repin. Wenn Repin an Porträts arbeitete, bat er ihn gelegentlich, zu einer bestimmten Zeit vorbeizukommen, und bedankte sich danach herzlich. Worin bestand Tschukowskis wertvolle Hilfe?",
     "answer": "Er unterhielt die Personen, die Modell saßen, damit ihre Gesichtszüge lebendig blieben.",
     "explanation": "Tschukowski plauderte mit den Porträtierten, damit sie nicht gelangweilt wirkten."
   },
@@ -157,9 +157,9 @@
   },
   {
     "id": "Q-27",
-    "text": "Ein Fotograf belichtete einen belebten Platz sehr lange. Auf dem fertigen Bild sieht der Platz fast menschenleer aus, obwohl niemand weggeschickt wurde. Warum?",
-    "answer": "Die Menschen bewegten sich während der langen Belichtung.",
-    "explanation": "Unbewegliche Gebäude sammeln sich scharf im Bild. Bewegte Personen hinterlassen nur schwache Spuren oder verschwinden fast ganz."
+    "text": "Auf einer frühen Stadtfotografie wirkt ein belebter Boulevard fast menschenleer. Deutlich zu erkennen sind aber ein Schuhputzer und sein Kunde. Warum gerade diese beiden?",
+    "answer": "Sie blieben während der langen Belichtungszeit lange genug still.",
+    "explanation": "Vorbeigehende Menschen bewegten sich zu schnell und zeichneten sich kaum ab. Schuhputzer und Kunde standen oder saßen lange an derselben Stelle."
   },
   {
     "id": "Q-28",
@@ -193,9 +193,9 @@
   },
   {
     "id": "Q-33",
-    "text": "Ein Architekt, der natürliche Formen studierte, sagte sinngemäß, sein bester Lehrer für Statik und Form sei ein vierbeiniges Tier mit einem gewölbten Panzer gewesen. Welches Tier meinte er?",
-    "answer": "Eine Schildkröte.",
-    "explanation": "Gaudí bewunderte die natürliche Stabilität von Schildkrötenpanzern."
+    "text": "Ein Architekt hängte in seinem Atelier Schnüre mit kleinen Gewichten auf, fotografierte das Modell und betrachtete das Foto auf dem Kopf. Welche Bauform wollte er so finden?",
+    "answer": "Die Form tragfähiger Bögen oder Gewölbe.",
+    "explanation": "Eine hängende Schnur zeigt eine günstige Zuglinie. Dreht man diese Linie um, ergibt sie eine günstige Drucklinie für Bögen und Gewölbe."
   },
   {
     "id": "Q-34",
@@ -211,9 +211,9 @@
   },
   {
     "id": "Q-36",
-    "text": "Warum gab es im frühen 20. Jahrhundert in London Straßenlaternen, die gar kein Licht spendeten?",
+    "text": "Warum gab es im frühen 20. Jahrhundert in London Laternenmasten, die gar kein Licht spendeten?",
     "answer": "Sie dienten als Masten für Telefonleitungen.",
-    "explanation": "Auf den Laternen wurden Telefonkabel geführt; Lampen brauchte man dort nicht."
+    "explanation": "Auf den Masten wurden Telefonkabel geführt; Lampen brauchte man dort nicht."
   },
   {
     "id": "Q-37",
@@ -241,9 +241,9 @@
   },
   {
     "id": "Q-41",
-    "text": "Ein Bibliothekar stellte ein Buch absichtlich an die falsche Stelle. Seitdem fanden es die Leser schneller. Warum?",
-    "answer": "Es war ein häufig gesuchtes Nachschlagewerk und wurde an den Auskunftsplatz oder in eine Sonderablage gestellt.",
-    "explanation": "Die Ordnung nach Katalog ist nicht immer die praktischste Ordnung. Für ein viel benutztes Buch kann eine sichtbare Sonderposition schneller sein."
+    "text": "Ein Bibliothekar stellte ein Buch absichtlich an die Stelle, an der Leser es immer wieder falsch einsortierten. Seitdem fanden sie es schneller. Warum war die falsche Stelle hier die bessere?",
+    "answer": "Weil sie der Ordnung entsprach, nach der die Leser tatsächlich suchten.",
+    "explanation": "Der Katalogplatz war formal richtig, aber die naheliegende Zuordnung der Leser war eine andere. Die Bibliothek passte die Ablage an das Suchverhalten an."
   },
   {
     "id": "Q-42",
@@ -265,9 +265,9 @@
   },
   {
     "id": "Q-45",
-    "text": "Ein Museumswärter sah jeden Tag Besucher vor einer scheinbar leeren Vitrine stehen. Die Vitrine war nicht kaputt, und das Exponat fehlte nicht. Was wurde dort ausgestellt?",
-    "answer": "Die Vitrine selbst.",
-    "explanation": "Wenn die historische oder besonders konstruierte Vitrine das Exponat ist, wirkt sie leer, obwohl der ausgestellte Gegenstand direkt vor den Besuchern steht."
+    "text": "Ein Restaurator bat Helfer, ein empfindliches altes Papier nicht mit Baumwollhandschuhen anzufassen, sondern mit frisch gewaschenen, trockenen Händen. Warum konnte das schonender sein?",
+    "answer": "Weil Handschuhe das Tastgefühl verringern und an Papierfasern hängen bleiben können.",
+    "explanation": "Mit sauberen trockenen Händen spürt man Widerstand besser und zerreißt dünnes Papier weniger leicht. Handschuhe sind nicht bei jedem Material die schonendere Wahl."
   },
   {
     "id": "Q-46",
@@ -289,9 +289,9 @@
   },
   {
     "id": "Q-49",
-    "text": "Ein Archäologe freute sich über eine Reihe leerer Löcher in einer alten Mauer. Die Löcher waren keine Beschädigung; sie bewiesen, dass dort einmal etwas Tragendes gewesen war. Was hatte dort ursprünglich gesteckt?",
-    "answer": "Holzbalken.",
-    "explanation": "Regelmäßige Balkenlöcher können auf Decken, Gerüste oder andere Holzkonstruktionen hinweisen, die längst vergangen sind."
+    "text": "Ein Archäologe freute sich über eine Reihe dunkler runder Flecken im Boden. Es waren keine Fundstücke; gerade ihr regelmäßiger Abstand verriet eine frühere Konstruktion. Was hatten die Flecken markiert?",
+    "answer": "Die Standorte verrotteter Holzpfosten.",
+    "explanation": "Wo Pfosten standen, bleibt oft anders gefärbter Boden zurück. Aus solchen Pfostenlöchern lassen sich Zäune, Wände oder Häuser rekonstruieren."
   },
   {
     "id": "Q-50",
