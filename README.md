@@ -26,3 +26,9 @@ and commits them with the message `Build GitHub Pages assets`.
 
 In the repository settings, configure GitHub Pages to deploy from the main branch
 and the `/docs` folder.
+
+## Soundtrack
+
+https://www.youtube.com/watch?v=DAugeVmr3rM&t=40s
+
+Play in a loop: right click on video and "loop".

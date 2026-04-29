@@ -1,92 +1,302 @@
 [
   {
     "id": "Q-01",
-    "text": "A man enters a room carrying a newspaper. Five minutes later everyone applauds him. Why?",
-    "answer": "He is a conductor entering the concert hall with the evening program, and the orchestra applauds his arrival.",
-    "explanation": "The newspaper is a misdirecting object; the applause is for the person, not for the paper."
+    "text": "Eine Katzenfamilie wartet geduldig darauf, dass aus einem merkwürdigen Ding ein Vögelchen herausfliegt. Was ist dieses Ding?",
+    "answer": "Eine Kamera.",
+    "explanation": "Beim Fotografieren sagt man auf Deutsch manchmal: „Jetzt kommt gleich das Vögelchen.“ Die Katzen nehmen das wörtlich."
   },
   {
     "id": "Q-02",
-    "text": "What can travel around the world while staying in the same corner?",
-    "answer": "A stamp.",
-    "explanation": "It moves from place to place while remaining in the corner of an envelope."
+    "text": "Auf einer alphabetischen Deutschlandkarte wirkt Augsburg näher an Berlin als Aachen. Warum ist das so?",
+    "answer": "Weil „Augsburg“ im Alphabet direkt vor „Berlin“ steht, während „Aachen“ weiter vorn einsortiert wird.",
+    "explanation": "Die Entfernung bezieht sich auf die alphabetische Reihenfolge, nicht auf die reale Geografie."
   },
   {
     "id": "Q-03",
-    "text": "A restaurant has a table that is always reserved, but no one ever sits at it. Why is it still useful every night?",
-    "answer": "It is the staff's reservation book or seating chart table.",
-    "explanation": "The word table refers to organized information, not necessarily furniture."
+    "text": "Hafenarbeiter sorgten dafür, dass Schiffe sicher ankerten, ohne zu stranden. Mit welchem bekannten Seemannsgruß lässt sich ihre Arbeit am besten beschreiben?",
+    "answer": "„Immer eine Handbreit Wasser unterm Kiel.“",
+    "explanation": "Der Gruß wünscht ausreichende Wassertiefe. Die Arbeiter sorgten genau dafür."
   },
   {
     "id": "Q-04",
-    "text": "A woman looks at a photograph and says, 'Brothers and sisters I have none, but this man's father is my father's son.' Who is in the photograph?",
-    "answer": "Her son.",
-    "explanation": "With no siblings, 'my father's son' means herself if adapted for the speaker, so the man's father is her."
+    "text": "Was hat einen Hals, aber keinen Kopf?",
+    "answer": "Eine Flasche.",
+    "explanation": "Der obere, schmale Teil einer Flasche wird Flaschenhals genannt."
   },
   {
     "id": "Q-05",
-    "text": "Which word becomes shorter when you add two letters to it?",
-    "answer": "Short.",
-    "explanation": "Adding 'er' makes the word 'shorter'."
+    "text": "Homer Simpson zeichnet einen Kreis mit einem Punkt in der Mitte, um Zugang zu einem geheimen Raum zu bekommen. Wofür dient diese Zeichnung?",
+    "answer": "Als Muster für einen Augenscanner.",
+    "explanation": "Der Kreis mit Punkt erinnert an ein Auge mit Pupille. Die Zeichnung soll den Scanner täuschen."
   },
   {
     "id": "Q-06",
-    "text": "A clock strikes thirteen. What is the most certain conclusion?",
-    "answer": "The clock is unreliable.",
-    "explanation": "It does not prove the time; it proves the instrument cannot be trusted."
+    "text": "Jemand beschwert sich, dass durch die offenen Fenster „fliegende Mäuse“ hereinkamen. Welche Tiere waren es wirklich?",
+    "answer": "Fledermäuse.",
+    "explanation": "Der Name „Fledermaus“ klingt zwar nach Maus, bezeichnet aber ein fliegendes Säugetier."
   },
   {
     "id": "Q-07",
-    "text": "What belongs to you, but other people use it more than you do?",
-    "answer": "Your name.",
-    "explanation": "People say your name to address or refer to you."
+    "text": "Welches deutsche Wort wird länger, wenn man zwei Buchstaben davorsetzt, und beschreibt danach, dass etwas nicht lang genug ist?",
+    "answer": "„Kurz“ – mit „zu“ davor wird daraus „zu kurz“.",
+    "explanation": "Die Schreibweise wird länger, die Bedeutung beschreibt aber etwas, das kürzer ist als nötig."
   },
   {
     "id": "Q-08",
-    "text": "A bottle and a cork cost 1 euro and 10 cents together. The bottle costs 1 euro more than the cork. How much does the cork cost?",
-    "answer": "5 cents.",
-    "explanation": "If the cork is 5 cents, the bottle is 1 euro and 5 cents, totaling 1 euro and 10 cents."
+    "text": "In einem wohlhabenden mittelalterlichen Haushalt entdeckte ein Kunsthistoriker einen Gegenstand, der den Reichtum des Besitzers bewies, weil ihn sich nur wenige leisten konnten. Welcher Gegenstand war das?",
+    "answer": "Eine Glasscheibe im Fenster.",
+    "explanation": "Glas war teuer; viele Fenster wurden damals mit Tierhäuten oder Holz verschlossen."
   },
   {
     "id": "Q-09",
-    "text": "Two people play five games of chess. Each wins the same number of games, and there are no draws. How is this possible?",
-    "answer": "They were not playing against each other.",
-    "explanation": "Each person played separate opponents."
+    "text": "In einer Schule wartet eine Gruppe schweigend vor einem Raum. Ein Lehrer kommt mit einer Zeitung heraus; niemand liest einen Artikel, trotzdem klatschen alle. Was steht in der Zeitung?",
+    "answer": "Eine Liste mit bestandenen Prüfungen oder aufgenommenen Kandidaten.",
+    "explanation": "„Zeitung“ meint hier den Aushang oder das gedruckte Blatt mit den Ergebnissen. Die Gruppe reagiert auf die Namen, nicht auf eine Nachricht."
   },
   {
     "id": "Q-10",
-    "text": "A room has no windows and no doors. Inside are a table and a mirror. How does a person get out?",
-    "answer": "Look in the mirror, see what you saw, take the saw, cut the table in half, and two halves make a whole to climb out.",
-    "explanation": "This is a wordplay riddle: saw, halves, and whole."
+    "text": "Eine Volksweisheit sagt: „Man kann den wecken, der schläft.“ Wen kann man nach dieser Weisheit nicht wecken?",
+    "answer": "Jemanden, der sich nur schlafend stellt.",
+    "explanation": "Wer so tut, als schliefe er, will nicht geweckt werden; man kann ihn nicht zur Vernunft bringen."
   },
   {
     "id": "Q-11",
-    "text": "What gets wetter the more it dries?",
-    "answer": "A towel.",
-    "explanation": "It absorbs water while drying something else."
+    "text": "Wann werden Steine nicht gesammelt oder geworfen, sondern statt dessen gefegt?",
+    "answer": "Beim Curling.",
+    "explanation": "Beim Curling werden die Steine mit Bürsten vor dem Stein ‚gefegt‘, damit sie weiter gleiten."
   },
   {
     "id": "Q-12",
-    "text": "A person pushes a car to a hotel and immediately loses money. What happened?",
-    "answer": "They are playing Monopoly.",
-    "explanation": "The car is a game piece, and the hotel is on the board."
+    "text": "Anton Tschechow sagte, eine menschliche Eigenschaft trete dann zutage, wenn man eine Handlung mit möglichst wenigen Bewegungen ausführt. Welche Eigenschaft meinte er?",
+    "answer": "Anmut.",
+    "explanation": "Anmut (Grazie) zeigt sich in sparsamen, fließenden Bewegungen."
   },
   {
     "id": "Q-13",
-    "text": "What has cities, roads, rivers, and mountains, but no people?",
-    "answer": "A map.",
-    "explanation": "It represents places without containing the real objects."
+    "text": "Juri Gagarin sagte einmal: „Ich bin ein einfacher Sterblicher; vor mir haben 11 174 Menschen etwas Großartiges geleistet.“ Wen meinte er damit?",
+    "answer": "Die Menschen, die vor ihm den Titel „Held der Sowjetunion“ erhielten.",
+    "explanation": "Gagarin war der 11 175. Held der Sowjetunion."
   },
   {
     "id": "Q-14",
-    "text": "A person is born in 1990 and dies in 1980. How can that be true?",
-    "answer": "The numbers are room numbers, not years.",
-    "explanation": "They were born in room 1990 and died in room 1980."
+    "text": "Ein Musiker sitzt oft im Flugzeug. Beim Start achtet er weniger auf die Anzeigen als auf die Tonhöhe der Triebwerke. Warum?",
+    "answer": "Er erkennt am Klang, ob die Triebwerke gleichmäßig und normal laufen.",
+    "explanation": "Musiker nehmen Tonhöhen sehr genau wahr. Ein ungewohnter Ton kann auf ein technisches Problem hindeuten."
   },
   {
     "id": "Q-15",
-    "text": "What is full of holes but still holds water?",
-    "answer": "A sponge.",
-    "explanation": "Its porous structure lets it absorb and hold water."
+    "text": "In den USA wurden Zwillinge geboren, über die man sagen konnte, jeder sei älter als der andere. Wie ist das möglich?",
+    "answer": "Zwischen den Geburten wurden die Uhren von der Sommerzeit auf die Winterzeit zurückgestellt.",
+    "explanation": "Der erste Zwilling kam vor der Uhrumstellung zur Welt; der zweite danach. Nach Uhrzeit ist der zweite ‚früher‘ geboren, in Wirklichkeit später."
+  },
+  {
+    "id": "Q-16",
+    "text": "Warum markierten Polarforscher ihre Versorgungslager mit hohen Fahnenstangen, obwohl die Kisten selbst gut verschlossen waren?",
+    "answer": "Damit sie die Lager im Schnee wiederfinden konnten.",
+    "explanation": "In der weißen Schneelandschaft verschwinden niedrige Kisten schnell aus dem Blick oder werden zugeschneit."
+  },
+  {
+    "id": "Q-17",
+    "text": "Ein Fußballschiedsrichter prüfte vor jedem Spiel seine Ausrüstung: gelbe Karte, rote Karte, Münze und Pfeife. Was konnte er trotzdem nie zu Hause vergessen, solange er selbst zum Spiel kam?",
+    "answer": "Seine Augen.",
+    "explanation": "Alle Ausrüstungsstücke konnte er liegen lassen. Seine Augen brauchte er zum Leiten des Spiels und brachte sie zwangsläufig mit."
+  },
+  {
+    "id": "Q-18",
+    "text": "Neben manchen Mülleimern steht ein flacher Metallrahmen, in den genau große, quadratische Kartons passen. Wozu dient er?",
+    "answer": "Zum Einsammeln von Pizzakartons.",
+    "explanation": "Pizzakartons verstopfen normale Mülleimer schnell. Im Rahmen können sie gestapelt gesammelt werden."
+  },
+  {
+    "id": "Q-19",
+    "text": "Sie freuen sich stets, Bärte oder Schnurrbärte zu sehen, am meisten aber Rücken und Hinterköpfe. Von welcher Berufsgruppe ist die Rede?",
+    "answer": "Von Synchronsprechern.",
+    "explanation": "Bei Bärten sieht man die Lippen nicht, bei Rücken und Hinterköpfen gar nicht – das erleichtert das Nachsynchronisieren."
+  },
+  {
+    "id": "Q-20",
+    "text": "Auf Packungen von Nudeln in Ecuador findet man zwei Kochzeiten: 8 Minuten und 12 Minuten. Wovon hängt die richtige Zeit ab?",
+    "answer": "Von der Höhe über dem Meeresspiegel.",
+    "explanation": "In den Anden kocht Wasser bei niedrigerer Temperatur; Nudeln brauchen dort länger."
+  },
+  {
+    "id": "Q-21",
+    "text": "Der Eishockeyspieler Wayne Gretzky sagte: „Gute Spieler sind dort, wo der Puck ist. Großartige Spieler sind dort …“. Wie endet der Satz?",
+    "answer": "„… wo der Puck sein wird.“",
+    "explanation": "Große Spieler antizipieren, wohin die Scheibe geht, und stehen schon da."
+  },
+  {
+    "id": "Q-22",
+    "text": "Der Schriftsteller Kornej Tschukowski lebte neben dem Maler Ilja Repin. Dieser bat ihn gelegentlich, zu einer bestimmten Zeit vorbeizukommen, und bedankte sich danach herzlich. Worin bestand Tschukowskis wertvolle Hilfe?",
+    "answer": "Er unterhielt die Personen, die Modell saßen, damit ihre Gesichtszüge lebendig blieben.",
+    "explanation": "Tschukowski plauderte mit den Porträtierten, damit sie nicht gelangweilt wirkten."
+  },
+  {
+    "id": "Q-23",
+    "text": "Zur Euro‑Einführung wurden in Belgien Uhren verkauft, bei denen statt der Ziffern 1, 2, 3 … die Zahlen 40,3; 80,6; 120,9 usw. standen. Wobei sollten diese Uhren helfen?",
+    "answer": "Für die Umrechnung von Belgischen Franc in Euro.",
+    "explanation": "1 Euro entsprach 40,3399 Franc; die Uhr sollte das Umrechnen erleichtern."
+  },
+  {
+    "id": "Q-24",
+    "text": "1972 filmte Sydney Pollack eine Dokumentation über die Aufnahmen von Aretha Franklin. Beim Schneiden stellte sich heraus, dass der Film nicht montierbar war, weil während der Dreharbeiten ein wichtiges Hilfsmittel fehlte. Welches?",
+    "answer": "Eine Klappe (Filmklappe).",
+    "explanation": "Ohne Klappe lassen sich Bild und Ton schwer synchronisieren; erst digitale Technik löste das."
+  },
+  {
+    "id": "Q-25",
+    "text": "Als Diego Velázquez in Rom berühmt werden wollte, schickte er seinen Diener zu vornehmen Römern. Was hatte der Diener bei seinen Besuchen dabei?",
+    "answer": "Ein von Velázquez gemaltes Porträt des Dieners selbst.",
+    "explanation": "Die Römer konnten die Ähnlichkeit mit dem Original vergleichen und sich von Velázquez’ Kunstfertigkeit überzeugen."
+  },
+  {
+    "id": "Q-26",
+    "text": "Ein Stuntman zieht bei manchen Drehs Schuhe an die Hände. Welche Körperteile sollen seine Hände dann im Bild darstellen?",
+    "answer": "Füße.",
+    "explanation": "In Nahaufnahmen oder gefährlichen Einstellungen können Hände mit Schuhen so gefilmt werden, dass sie wie Füße wirken."
+  },
+  {
+    "id": "Q-27",
+    "text": "Ein Sammler bezahlt für eine Zeitung von gestern mehr als für die heutige Ausgabe. Sie enthält keine seltene Meldung und keinen Druckfehler. Warum ist sie ihm trotzdem mehr wert?",
+    "answer": "Sie ist Teil eines Archivs oder stammt von einem bestimmten persönlichen Datum.",
+    "explanation": "Der Wert liegt nicht in der Aktualität, sondern im Datum der Ausgabe, zum Beispiel einem Geburtstag, Jubiläum oder historischen Tag."
+  },
+  {
+    "id": "Q-28",
+    "text": "Eine Volksweisheit rät Eltern: Wenn sie ihre Kinder nicht gut kennen, sollen sie nicht die Kinder selbst betrachten, sondern bestimmte andere Menschen. Wen?",
+    "answer": "Ihre Freunde.",
+    "explanation": "Die Wahl der Freunde verrät oft etwas über Interessen, Werte und Verhalten eines Menschen."
+  },
+  {
+    "id": "Q-29",
+    "text": "Ein Übersetzer ließ in einer deutschen Ausgabe ein fremdes Wort unübersetzt stehen. Gerade dadurch verstanden die Leser die Pointe besser. Wann ist das sinnvoll?",
+    "answer": "Wenn das fremde Wort im Deutschen selbst bekannt ist oder als Fremdwort die Pointe trägt.",
+    "explanation": "Manchmal ist die wörtliche Übersetzung schlechter als das bekannte Lehnwort. Die Verständlichkeit hängt dann am wiedererkennbaren Originalausdruck."
+  },
+  {
+    "id": "Q-30",
+    "text": "Ein Prüfer stellte einem Kandidaten eine Frage, die nur dann ehrlich mit „Ja“ beantwortet werden konnte, wenn der Kandidat die Prüfung bereits nicht mehr fortsetzte. Welche Art Frage war das?",
+    "answer": "Eine Frage wie „Schlafen Sie?“",
+    "explanation": "Wer tatsächlich schläft, kann nicht bewusst antworten. Ein waches „Ja“ wäre gerade der Beweis, dass die Antwort nicht stimmt."
+  },
+  {
+    "id": "Q-31",
+    "text": "Ein Mann zeigt auf ein Porträt und sagt: „Ich habe keine Brüder. Der Vater des Mannes auf diesem Bild ist der Sohn meines Vaters.“ Wer ist auf dem Bild?",
+    "answer": "Sein Sohn.",
+    "explanation": "Da er keine Brüder hat, ist „der Sohn meines Vaters“ der Sprecher selbst. Also ist er der Vater des abgebildeten Mannes."
+  },
+  {
+    "id": "Q-32",
+    "text": "Ein Händler verkauft ein Kilogramm Federn und ein Kilogramm Blei. Der Käufer trägt beides nach Hause und sagt, die Federn seien schwerer gewesen. Wie kann er recht haben?",
+    "answer": "Das Paket mit den Federn war unhandlicher oder hatte schwerere Verpackung.",
+    "explanation": "Das reine Gewicht der Ware ist gleich. Die gefühlte Last oder das Gesamtpaket kann sich trotzdem unterscheiden."
+  },
+  {
+    "id": "Q-33",
+    "text": "Ein Architekt, der natürliche Formen studierte, sagte sinngemäß, sein bester Lehrer für Statik und Form sei ein vierbeiniges Tier mit einem gewölbten Panzer gewesen. Welches Tier meinte er?",
+    "answer": "Eine Schildkröte.",
+    "explanation": "Gaudí bewunderte die natürliche Stabilität von Schildkrötenpanzern."
+  },
+  {
+    "id": "Q-34",
+    "text": "Warum werden manche Fahrradschläuche innen mit Talkum bestäubt?",
+    "answer": "Damit sie nicht am Mantel festkleben und sich beim Aufpumpen leicht bewegen.",
+    "explanation": "Talkum verringert die Reibung zwischen Schlauch und Reifen."
+  },
+  {
+    "id": "Q-35",
+    "text": "Ein Geschäftsmann parkte seinen BMW mitten auf einem öffentlich zugänglichen Platz, ohne einen Strafzettel zu bekommen. Wie war das möglich?",
+    "answer": "Der Platz gehörte ihm.",
+    "explanation": "Als Besitzer des Platzes durfte er dort parken."
+  },
+  {
+    "id": "Q-36",
+    "text": "Warum gab es im frühen 20. Jahrhundert in London Straßenlaternen, die gar kein Licht spendeten?",
+    "answer": "Sie dienten als Masten für Telefonleitungen.",
+    "explanation": "Auf den Laternen wurden Telefonkabel geführt; Lampen brauchte man dort nicht."
+  },
+  {
+    "id": "Q-37",
+    "text": "Warum war ein Telefonbuch früher dicker als heute, obwohl es weniger Einwohner gab?",
+    "answer": "Früher waren mehr Festnetznummern öffentlich eingetragen; heute sind viele Nummern geheim oder mobil und erscheinen nicht mehr.",
+    "explanation": "Datenschutz und Mobiltelefone haben gedruckte Verzeichnisse dünner gemacht."
+  },
+  {
+    "id": "Q-38",
+    "text": "Ein Maler lässt auf einem Gruppenbild eine Person weg, obwohl sie die wichtigste Auftraggeberin ist. Gerade dadurch erkennt jeder im Raum, wer sie ist. Wie kann das sein?",
+    "answer": "Die Auftraggeberin ist die Betrachterin oder Besitzerin des Bildes.",
+    "explanation": "Wenn das Bild an ihrem Platz hängt oder ihr gegenüber gezeigt wird, ist ihre Abwesenheit der Hinweis: Alle Dargestellten blicken oder verhalten sich zu ihr."
+  },
+  {
+    "id": "Q-39",
+    "text": "Ein Uhrmacher reparierte eine Turmuhr, indem er nicht das Uhrwerk, sondern die Glocke veränderte. Danach zeigte die Uhr für die Bewohner wieder die richtige Zeit. Was war das Problem?",
+    "answer": "Die Bewohner hörten die Uhr, statt sie zu sehen; die falsche Anzahl oder Reihenfolge der Schläge war das eigentliche Zeitzeichen.",
+    "explanation": "Bei einer Turmuhr kann die wahrgenommene Zeit über Glockenschläge vermittelt werden. Wenn die Anzeige stimmt, aber das Läuten falsch ist, muss die Glockensteuerung korrigiert werden."
+  },
+  {
+    "id": "Q-40",
+    "text": "Ein Restaurator ließ eine alte Sonnenuhr absichtlich schief stehen. Gerade deshalb ging sie am neuen Ort genauer. Warum?",
+    "answer": "Sie musste auf den Breitengrad des neuen Standorts ausgerichtet werden.",
+    "explanation": "Der Schattenstab einer Sonnenuhr muss zur Erdachse passen. An einem anderen Ort kann eine scheinbar schiefe Stellung die korrekte Ausrichtung sein."
+  },
+  {
+    "id": "Q-41",
+    "text": "Ein Bibliothekar stellte ein Buch absichtlich an die falsche Stelle. Seitdem fanden es die Leser schneller. Warum?",
+    "answer": "Es war ein häufig gesuchtes Nachschlagewerk und wurde an den Auskunftsplatz oder in eine Sonderablage gestellt.",
+    "explanation": "Die Ordnung nach Katalog ist nicht immer die praktischste Ordnung. Für ein viel benutztes Buch kann eine sichtbare Sonderposition schneller sein."
+  },
+  {
+    "id": "Q-42",
+    "text": "In einem Flugzeug heißt ein wichtiges Gerät „Black Box“. Nach einem Unfall suchten die Ermittler aber gerade nicht nach einem schwarzen Gegenstand. Wonach suchten sie?",
+    "answer": "Nach einem leuchtend orangefarbenen Flugschreiber.",
+    "explanation": "Flugschreiber werden auffällig orange lackiert, damit man sie nach einem Unfall leichter findet."
+  },
+  {
+    "id": "Q-43",
+    "text": "Ein Arzt notierte bei zwei Patienten denselben Puls, dieselbe Temperatur und denselben Blutdruck. Trotzdem sagte er nur bei einem: „Der Zustand ist normal.“ Warum?",
+    "answer": "Die Patienten waren keine gleichartigen Patienten, zum Beispiel ein Erwachsener und ein Neugeborenes oder Mensch und Tier.",
+    "explanation": "Messwerte sind nur im passenden Vergleichsbereich aussagekräftig. Derselbe Wert kann je nach Patient normal oder auffällig sein."
+  },
+  {
+    "id": "Q-44",
+    "text": "Ein Setzer bemerkte, dass ein Wort auch dann gleich blieb, wenn er den Druckbogen falsch herum hielt. Welches technische Gerät konnte mit diesem Wort gemeint sein?",
+    "answer": "Radar.",
+    "explanation": "„Radar“ ist ein Palindrom. Es liest sich von vorn und hinten gleich, was zu einem falsch herum betrachteten Druckbogen passt."
+  },
+  {
+    "id": "Q-45",
+    "text": "Ein Museumswärter sah jeden Tag Besucher vor einer leeren Vitrine stehen. Die Vitrine war nicht kaputt, und das ausgestellte Objekt fehlte nicht. Was wurde dort ausgestellt?",
+    "answer": "Etwas Unsichtbares oder nur durch seine Wirkung Erkennbares, zum Beispiel Luft aus einem historischen Ort.",
+    "explanation": "Bei Konzept- oder Erinnerungsausstellungen kann nicht das Objekt selbst sichtbar sein, sondern seine Herkunft, Beschriftung oder Bedeutung."
+  },
+  {
+    "id": "Q-46",
+    "text": "Ein Dirigent bat das Orchester, leiser zu spielen, obwohl im Saal niemand die Musik hören konnte. Warum war diese Bitte trotzdem sinnvoll?",
+    "answer": "Es handelte sich um eine Aufnahme; die Mikrofone übersteuerten.",
+    "explanation": "Für die Aufnahme zählt nicht nur, was das Publikum hört, sondern was die Technik sauber erfassen kann."
+  },
+  {
+    "id": "Q-47",
+    "text": "Ein Wanderer ging den ganzen Tag bergab und kam am Abend doch an einem höher gelegenen Ort an. Wie ist das möglich?",
+    "answer": "Er fuhr oder wurde zwischendurch nach oben gebracht, zum Beispiel mit einer Seilbahn.",
+    "explanation": "Die Aussage beschreibt nur seine Gehstrecken. Zwischen ihnen kann ein Transport Höhenmeter gewonnen haben."
+  },
+  {
+    "id": "Q-48",
+    "text": "Ein Wörterbuch enthält ein Wort, das dort immer „falsch“ geschrieben steht, obwohl der Eintrag korrekt ist. Welches Wort ist gemeint?",
+    "answer": "Das Wort „falsch“.",
+    "explanation": "Gemeint ist nicht ein Fehler im Wörterbuch, sondern der Eintrag des Wortes „falsch“ selbst."
+  },
+  {
+    "id": "Q-49",
+    "text": "Ein Archäologe freute sich über viele Spuren, die gerade dadurch entstanden waren, dass jemand etwas weggenommen hatte. Was wurde weggenommen?",
+    "answer": "Schritte wurden gemacht.",
+    "explanation": "Wer Schritte macht, nimmt sie im übertragenen Sinn, lässt aber Fußspuren zurück."
+  },
+  {
+    "id": "Q-50",
+    "text": "Ein Klavierbauer sagte, sein Instrument habe mehr Tasten als manche Schreibmaschine, könne aber trotzdem keinen einzigen Brief schreiben. Warum ist der Vergleich irreführend?",
+    "answer": "Die Tasten lösen Töne aus, keine Schriftzeichen.",
+    "explanation": "Das gleiche Wort „Taste“ bezeichnet verschiedene Funktionen. Beim Klavier dient es der Musik, nicht dem Schreiben."
   }
 ]
