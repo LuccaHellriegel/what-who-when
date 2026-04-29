@@ -72,6 +72,7 @@ button:disabled {
 
 h1,
 h2,
+h3,
 p {
   margin: 0;
 }
@@ -102,7 +103,7 @@ h2 {
 
 .scoreboard {
   display: grid;
-  grid-template-columns: minmax(120px, 1fr) auto minmax(120px, 1fr) auto auto;
+  grid-template-columns: minmax(120px, 1fr) auto minmax(120px, 1fr) auto auto auto;
   align-items: center;
   gap: 12px;
   padding: 10px;
@@ -427,6 +428,138 @@ textarea:focus {
   font-size: 1.4rem;
 }
 
+.past-games {
+  display: grid;
+  gap: 10px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(154, 164, 178, 0.2);
+}
+
+.archive-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 20;
+  min-height: 0;
+  border: 0;
+  border-radius: 0;
+  background: rgba(0, 0, 0, 0.44);
+  cursor: default;
+}
+
+.archive-backdrop:hover {
+  transform: none;
+}
+
+.archive-drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 21;
+  display: grid;
+  grid-template-rows: auto auto minmax(0, 1fr);
+  gap: 14px;
+  width: min(390px, 100vw);
+  padding: 22px;
+  border-left: 1px solid rgba(212, 175, 55, 0.34);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.05), transparent 42%),
+    rgba(18, 26, 46, 0.98);
+  box-shadow: -28px 0 90px rgba(0, 0, 0, 0.44);
+}
+
+.archive-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.archive-header h2 {
+  font-size: 1.7rem;
+}
+
+.archive-list {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+  min-height: 0;
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.archive-game-button {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 4px 12px;
+  min-height: 74px;
+  padding: 12px;
+  text-align: left;
+}
+
+.archive-game-button span,
+.archive-game-button small {
+  color: var(--muted);
+}
+
+.archive-game-button strong {
+  color: var(--gold);
+  font-size: 1.2rem;
+}
+
+.archive-game-button small {
+  grid-column: 1 / -1;
+}
+
+.archive-game-button.is-active {
+  border-color: var(--gold);
+  background: rgba(212, 175, 55, 0.14);
+}
+
+.past-games h3 {
+  color: var(--muted);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.past-game-list,
+.past-rounds {
+  display: grid;
+  gap: 8px;
+}
+
+.past-game {
+  border: 1px solid rgba(212, 175, 55, 0.22);
+  border-radius: 8px;
+  background: rgba(0, 0, 0, 0.16);
+}
+
+.past-game > summary {
+  display: grid;
+  grid-template-columns: minmax(80px, 1fr) auto minmax(150px, auto);
+  align-items: center;
+  gap: 12px;
+  min-height: 42px;
+  padding: 0 14px;
+  cursor: pointer;
+}
+
+.past-game > summary strong {
+  color: var(--gold);
+}
+
+.past-game > summary small {
+  color: var(--muted);
+  text-align: right;
+}
+
+.past-rounds {
+  padding: 0 10px 10px;
+}
+
 .history-list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -638,6 +771,11 @@ dd {
     font-size: 1.15rem;
   }
 
+  .past-games {
+    margin-top: 10px;
+    padding-top: 10px;
+  }
+
   .history-list {
     grid-template-columns: repeat(auto-fit, minmax(145px, 1fr));
     gap: 8px;
@@ -659,9 +797,19 @@ dd {
   .scoreboard div,
   .timer,
   .question-meta,
-  .history-title {
+  .history-title,
+  .past-game > summary {
     align-items: stretch;
     flex-direction: column;
+  }
+
+  .past-game > summary {
+    display: flex;
+    padding: 10px 14px;
+  }
+
+  .past-game > summary small {
+    text-align: left;
   }
 
   .wheel-stage,

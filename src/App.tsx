@@ -39,8 +39,17 @@ type GameState = {
   wheelRotation: number
 }
 
+type PastGame = {
+  id: string
+  playedAt: string
+  experts: number
+  viewers: number
+  history: HistoryEntry[]
+}
+
 const QUESTIONS = questionsData as Question[]
 const STORAGE_KEY = 'what-who-when-nastia-game'
+const ARCHIVE_STORAGE_KEY = 'what-who-when-nastia-past-games'
 const TIMER_SECONDS = 60
 const WIN_SCORE = 6
 const SECTOR_COUNT = 12
@@ -76,8 +85,31 @@ function loadGame(): GameState {
   }
 }
 
+function loadPastGames(): PastGame[] {
+  try {
+    const stored = window.localStorage.getItem(ARCHIVE_STORAGE_KEY)
+
+    if (!stored) {
+      return []
+    }
+
+    const parsed = JSON.parse(stored) as PastGame[]
+
+    return Array.isArray(parsed) ? parsed : []
+  } catch {
+    return []
+  }
+}
+
 function formatTime(seconds: number) {
   return `0:${String(seconds).padStart(2, '0')}`
+}
+
+function formatDate(value: string) {
+  return new Intl.DateTimeFormat(undefined, {
+    dateStyle: 'medium',
+    timeStyle: 'short',
+  }).format(new Date(value))
 }
 
 function statusLabel(result: Result) {
@@ -106,14 +138,29 @@ function statusIcon(result: Result) {
 
 function App() {
   const [game, setGame] = useState<GameState>(() => loadGame())
+  const [pastGames, setPastGames] = useState<PastGame[]>(() => loadPastGames())
   const [spinning, setSpinning] = useState(false)
+  const [archiveOpen, setArchiveOpen] = useState(false)
+  const [viewedPastGameId, setViewedPastGameId] = useState<string | null>(null)
 
+  const viewedPastGame =
+    pastGames.find((pastGame) => pastGame.id === viewedPastGameId) ?? null
+  const isViewingPast = Boolean(viewedPastGame)
+  const displayedExperts = viewedPastGame?.experts ?? game.experts
+  const displayedViewers = viewedPastGame?.viewers ?? game.viewers
+  const displayedHistory = viewedPastGame?.history ?? game.history
   const roundNumber = game.history.length + (game.activeRound ? 1 : 0) + 1
   const activeRoundNumber = game.history.length + 1
   const winner =
     game.experts >= WIN_SCORE
       ? 'Experts'
       : game.viewers >= WIN_SCORE
+        ? 'Viewers'
+        : null
+  const displayedWinner =
+    displayedExperts >= WIN_SCORE
+      ? 'Experts'
+      : displayedViewers >= WIN_SCORE
         ? 'Viewers'
         : null
 
@@ -128,6 +175,13 @@ function App() {
   useEffect(() => {
     window.localStorage.setItem(STORAGE_KEY, JSON.stringify(game))
   }, [game])
+
+  useEffect(() => {
+    window.localStorage.setItem(
+      ARCHIVE_STORAGE_KEY,
+      JSON.stringify(pastGames),
+    )
+  }, [pastGames])
 
   useEffect(() => {
     if (
@@ -159,12 +213,41 @@ function App() {
   }, [game.activeRound])
 
   function startNewGame() {
+    if (game.history.length > 0) {
+      const archivedGame: PastGame = {
+        id: `${Date.now()}`,
+        playedAt: new Date().toISOString(),
+        experts: game.experts,
+        viewers: game.viewers,
+        history: game.history,
+      }
+
+      setPastGames((current) => [archivedGame, ...current].slice(0, 12))
+    }
+
     setSpinning(false)
+    setViewedPastGameId(null)
     setGame(emptyGame)
   }
 
+  function openPastGame(id: string) {
+    setViewedPastGameId(id)
+    setArchiveOpen(false)
+  }
+
+  function returnToCurrentGame() {
+    setViewedPastGameId(null)
+    setArchiveOpen(false)
+  }
+
   function spinWheel() {
-    if (spinning || game.activeRound || winner || unusedQuestions.length === 0) {
+    if (
+      isViewingPast ||
+      spinning ||
+      game.activeRound ||
+      winner ||
+      unusedQuestions.length === 0
+    ) {
       return
     }
 
@@ -276,31 +359,41 @@ function App() {
       <section className="scoreboard" aria-label="Scoreboard">
         <div>
           <span>Experts</span>
-          <strong>{game.experts}</strong>
+          <strong>{displayedExperts}</strong>
         </div>
         <p aria-label="Current score">
-          {game.experts} — {game.viewers}
+          {displayedExperts} — {displayedViewers}
         </p>
         <div>
           <span>Viewers</span>
-          <strong>{game.viewers}</strong>
+          <strong>{displayedViewers}</strong>
         </div>
-        <span className="round-pill">Round {activeRoundNumber}</span>
+        <span className="round-pill">
+          {isViewingPast ? 'Past game' : `Round ${activeRoundNumber}`}
+        </span>
+        <button
+          type="button"
+          className="ghost-button"
+          onClick={() => setArchiveOpen(true)}
+        >
+          Archive
+        </button>
         <button type="button" className="ghost-button" onClick={startNewGame}>
           New game
         </button>
       </section>
 
-      {winner && (
+      {displayedWinner && (
         <motion.section
           className="final-summary"
           initial={{ opacity: 0, y: -12 }}
           animate={{ opacity: 1, y: 0 }}
           aria-live="polite"
         >
-          <p>{winner} win 6 points.</p>
+          <p>{displayedWinner} win 6 points.</p>
           <strong>
-            Final score: Experts {game.experts} — {game.viewers} Viewers
+            Final score: Experts {displayedExperts} — {displayedViewers}{' '}
+            Viewers
           </strong>
         </motion.section>
       )}
@@ -312,7 +405,12 @@ function App() {
             type="button"
             className="wheel"
             onClick={spinWheel}
-            disabled={Boolean(game.activeRound) || spinning || Boolean(winner)}
+            disabled={
+              isViewingPast ||
+              Boolean(game.activeRound) ||
+              spinning ||
+              Boolean(winner)
+            }
             animate={{ rotate: game.wheelRotation }}
             transition={{ duration: 1.8, ease: [0.15, 0.82, 0.22, 1] }}
             aria-label="Spin wheel"
@@ -329,15 +427,38 @@ function App() {
                 {index + 1}
               </span>
             ))}
-            <strong>{spinning ? 'Spinning' : 'Spin'}</strong>
+            <strong>
+              {isViewingPast ? 'Past' : spinning ? 'Spinning' : 'Spin'}
+            </strong>
           </motion.button>
           <p className="wheel-caption">
-            {unusedQuestions.length} unused questions remain
+            {isViewingPast
+              ? 'Viewing archived game'
+              : `${unusedQuestions.length} unused questions remain`}
           </p>
         </section>
 
         <section className="question-panel" aria-label="Question area">
-          {game.activeRound ? (
+          {viewedPastGame ? (
+            <div className="empty-question past-view">
+              <p>{formatDate(viewedPastGame.playedAt)}</p>
+              <h2>
+                Archived game: Experts {viewedPastGame.experts} —{' '}
+                {viewedPastGame.viewers} Viewers
+              </h2>
+              <span>
+                {viewedPastGame.history.length} completed rounds. Use the
+                bottom history drawer to inspect answers from this game.
+              </span>
+              <button
+                type="button"
+                className="primary-button"
+                onClick={returnToCurrentGame}
+              >
+                Back to current game
+              </button>
+            </div>
+          ) : game.activeRound ? (
             <>
               <div className="question-meta">
                 <p>Question {activeRoundNumber}</p>
@@ -460,12 +581,17 @@ function App() {
 
       <section className="history-drawer" aria-label="History drawer">
         <div className="history-title">
-          <h2>History</h2>
-          <span>{game.history.length} completed</span>
+          <h2>{isViewingPast ? 'Past Game History' : 'History'}</h2>
+          <span>
+            {displayedHistory.length} rounds · {pastGames.length} archived
+          </span>
         </div>
         <div className="history-list">
-          {game.history.map((entry, index) => (
-            <details key={entry.questionId} className={`history-row ${entry.result}`}>
+          {displayedHistory.map((entry, index) => (
+            <details
+              key={`${viewedPastGame?.id ?? 'current'}-${entry.questionId}`}
+              className={`history-row ${entry.result}`}
+            >
               <summary>
                 <span>
                   Q{index + 1} {statusIcon(entry.result)}
@@ -488,16 +614,88 @@ function App() {
               </dl>
             </details>
           ))}
-          {game.activeRound && (
+          {!isViewingPast && game.activeRound && (
             <div className="history-row active">
               <span>Q{activeRoundNumber} active</span>
             </div>
           )}
-          {!game.history.length && !game.activeRound && (
+          {!displayedHistory.length && !game.activeRound && (
             <p className="empty-history">No rounds yet.</p>
           )}
         </div>
       </section>
+
+      {archiveOpen && (
+        <>
+          <button
+            type="button"
+            className="archive-backdrop"
+            aria-label="Close archive"
+            onClick={() => setArchiveOpen(false)}
+          />
+          <motion.aside
+            className="archive-drawer"
+            aria-label="Game archive"
+            initial={{ x: '100%' }}
+            animate={{ x: 0 }}
+            exit={{ x: '100%' }}
+            transition={{ duration: 0.22, ease: 'easeOut' }}
+          >
+            <div className="archive-header">
+              <div>
+                <p className="kicker">Archive</p>
+                <h2>Games</h2>
+              </div>
+              <button
+                type="button"
+                className="ghost-button"
+                onClick={() => setArchiveOpen(false)}
+              >
+                Close
+              </button>
+            </div>
+
+            <button
+              type="button"
+              className={`archive-game-button ${!isViewingPast ? 'is-active' : ''}`}
+              onClick={returnToCurrentGame}
+            >
+              <span>Current game</span>
+              <strong>
+                {game.experts} — {game.viewers}
+              </strong>
+              <small>{game.history.length} completed rounds</small>
+            </button>
+
+            <div className="archive-list">
+              {pastGames.map((pastGame, gameIndex) => (
+                <button
+                  type="button"
+                  key={pastGame.id}
+                  className={`archive-game-button ${
+                    viewedPastGameId === pastGame.id ? 'is-active' : ''
+                  }`}
+                  onClick={() => openPastGame(pastGame.id)}
+                >
+                  <span>Game {pastGames.length - gameIndex}</span>
+                  <strong>
+                    {pastGame.experts} — {pastGame.viewers}
+                  </strong>
+                  <small>
+                    {formatDate(pastGame.playedAt)} ·{' '}
+                    {pastGame.history.length} rounds
+                  </small>
+                </button>
+              ))}
+              {!pastGames.length && (
+                <p className="empty-history">
+                  Past games will appear here after you start a new game.
+                </p>
+              )}
+            </div>
+          </motion.aside>
+        </>
+      )}
     </main>
   )
 }
