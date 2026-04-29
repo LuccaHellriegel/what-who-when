@@ -13,9 +13,9 @@
   },
   {
     "id": "Q-03",
-    "text": "Ein Matrose warf früher ein mit Blei beschwertes Seil ins Wasser, obwohl niemand etwas festmachen wollte. Die Zahl, die er danach rief, konnte entscheiden, ob das Schiff weiterfahren durfte. Was hatte er gemessen?",
-    "answer": "Die Wassertiefe.",
-    "explanation": "Mit einem Lot konnte man feststellen, wie viel Wasser unter dem Kiel war. War es zu flach, drohte das Schiff auf Grund zu laufen."
+    "text": "Ein Matrose holte früher ein mit Blei beschwertes Seil wieder ein und betrachtete nicht nur die Markierungen am Seil, sondern auch den Schmutz, der unten am Gewicht klebte. Warum interessierte ihn ausgerechnet dieser Schmutz?",
+    "answer": "Er verriet die Beschaffenheit des Meeresbodens.",
+    "explanation": "Mit dem Lot maß man die Tiefe; am eingefetteten Gewicht blieben Sand, Schlick oder Muschelsplitter haften. Das half beim Navigieren und beim Suchen eines Ankerplatzes."
   },
   {
     "id": "Q-04",
@@ -31,9 +31,9 @@
   },
   {
     "id": "Q-06",
-    "text": "Ein Forscher stellte in einer Höhle seine Zählstation nicht dort auf, wo die Tiere hingen, sondern am Ausgang. Er zählte vor allem dunkle Umrisse gegen den Abendhimmel. Welche Tiere zählte er?",
-    "answer": "Fledermäuse.",
-    "explanation": "Fledermäuse verlassen Höhlen oft in der Dämmerung. Gegen den helleren Himmel lassen sie sich leichter zählen als im Inneren der Höhle."
+    "text": "Ein Biologe stellte in einer Höhle seine Kamera nicht auf die Tiere, sondern auf den hellen Ausgang. Auf den Aufnahmen waren fast nur schwarze Striche zu sehen, und genau das reichte ihm. Was wollte er wissen?",
+    "answer": "Wie viele Fledermäuse die Höhle verlassen.",
+    "explanation": "Beim Ausflug in der Dämmerung heben sich Fledermäuse als Silhouetten gegen den helleren Himmel ab. Im Höhleninneren wären sie viel schwerer zu zählen."
   },
   {
     "id": "Q-07",
@@ -79,9 +79,9 @@
   },
   {
     "id": "Q-14",
-    "text": "Ein Lokführer erkannte im Dunkeln manchmal eine Brücke, bevor er sie sah: Für einen kurzen Moment klangen die Räder anders. Was veränderte den Klang?",
-    "answer": "Der Zug fuhr nicht mehr über normalen Bahndamm, sondern über eine andere Konstruktion.",
-    "explanation": "Brücken, Weichen oder Hohlräume können das Fahrgeräusch deutlich verändern. Ein erfahrener Mensch kann aus solchen Klangwechseln Hinweise auf die Strecke ziehen."
+    "text": "Ein Lokführer erkannte im Dunkeln manchmal eine Brücke, bevor sie im Scheinwerfer lag: Für einen kurzen Moment wurden die Fahrgeräusche heller und hohler. Was fehlte unter den Schienen?",
+    "answer": "Der dämpfende Bahndamm beziehungsweise das normale Schotterbett.",
+    "explanation": "Auf einer Brücke werden Schienen und Schwellen anders getragen; unter ihnen ist mehr Hohlraum oder Stahlkonstruktion. Deshalb verändert sich das Rollgeräusch."
   },
   {
     "id": "Q-15",
@@ -97,9 +97,9 @@
   },
   {
     "id": "Q-17",
-    "text": "Ein Tennisspieler schlägt auf. Der Ball berührt das Netz, landet aber genau dort, wo ein gültiger Aufschlag landen muss. Der Schiedsrichter gibt trotzdem weder Punkt noch Fehler. Was passiert stattdessen?",
-    "answer": "Der Aufschlag wird wiederholt.",
-    "explanation": "Ein Netzaufschlag, der im richtigen Feld landet, ist ein Let. Der Ballwechsel beginnt mit diesem Aufschlag noch einmal."
+    "text": "In einem engen Aufzug wurde gegenüber der Tür ein Spiegel montiert. Er sollte nicht den Raum größer wirken lassen und auch nicht der Eitelkeit dienen. Welchen Fahrgästen half er besonders?",
+    "answer": "Menschen im Rollstuhl.",
+    "explanation": "Wenn der Aufzug zu eng zum Wenden ist, können sie beim Rückwärtsausfahren im Spiegel sehen, was hinter ihnen passiert."
   },
   {
     "id": "Q-18",
@@ -121,9 +121,9 @@
   },
   {
     "id": "Q-21",
-    "text": "Ein Eishockeytrainer lobt ausgerechnet den Spieler, der oft nicht dort steht, wo die Scheibe gerade ist. Warum kann gerade das ein Zeichen für gutes Spielverständnis sein?",
-    "answer": "Weil er voraussieht, wo die Scheibe gleich sein wird.",
-    "explanation": "Gute Spieler reagieren nicht nur auf die aktuelle Lage, sondern antizipieren den nächsten Pass, Abpraller oder Laufweg."
+    "text": "Ein Eishockeytrainer zeigte einem Anfänger eine leere Stelle auf dem Eis und sagte: „Dort ist gerade der wichtigste Ort.“ Die Scheibe war woanders. Warum konnte die leere Stelle wichtiger sein?",
+    "answer": "Weil dort gleich die Scheibe oder ein Mitspieler ankommen sollte.",
+    "explanation": "Gutes Spielverständnis heißt, Räume und nächste Pässe zu lesen, nicht nur der aktuellen Scheibe hinterherzufahren."
   },
   {
     "id": "Q-22",
@@ -163,9 +163,9 @@
   },
   {
     "id": "Q-28",
-    "text": "Eine Volksweisheit rät Eltern: Wenn sie ihre Kinder nicht gut kennen, sollen sie nicht die Kinder selbst betrachten, sondern bestimmte andere Menschen. Wen?",
-    "answer": "Ihre Freunde.",
-    "explanation": "Die Wahl der Freunde verrät oft etwas über Interessen, Werte und Verhalten eines Menschen."
+    "text": "Ein erfahrener Lehrer behauptete, er könne über einen neuen Schüler schon etwas lernen, bevor dieser eine Aufgabe abgegeben hatte. In der Pause beobachtete er dafür nicht den Schüler selbst, sondern die Menschen um ihn herum. Worauf achtete er?",
+    "answer": "Auf die Freunde oder die Gruppe, die der Schüler sich suchte.",
+    "explanation": "Die Menschen, mit denen jemand freiwillig Zeit verbringt, verraten oft mehr als eine einzelne Antwort im Unterricht."
   },
   {
     "id": "Q-29",
@@ -211,14 +211,14 @@
   },
   {
     "id": "Q-36",
-    "text": "Warum gab es im frühen 20. Jahrhundert in London Laternenmasten, die gar kein Licht spendeten?",
-    "answer": "Sie dienten als Masten für Telefonleitungen.",
-    "explanation": "Auf den Masten wurden Telefonkabel geführt; Lampen brauchte man dort nicht."
+    "text": "Ein Antiquar freute sich über ein altes Buch, bei dem viele Seiten am Rand noch zusammenhingen. Für einen normalen Leser wäre das lästig gewesen. Warum war es für den Antiquar ein gutes Zeichen?",
+    "answer": "Das Buch war wahrscheinlich nie oder kaum gelesen worden.",
+    "explanation": "Früher mussten Leser die gefalteten Druckbögen oft selbst aufschneiden. Unaufgeschnittene Seiten können zeigen, dass niemand das Buch gründlich benutzt hat."
   },
   {
     "id": "Q-37",
-    "text": "Ein altes Telefonbuch einer kleineren Stadt kann dicker sein als ein neues Telefonbuch einer größeren Stadt. Die Papierstärke ist nicht der Grund. Warum?",
-    "answer": "Früher standen mehr private Festnetznummern öffentlich im Telefonbuch.",
+    "text": "Ein altes Telefonbuch einer kleineren Stadt kann dicker sein als ein neues Telefonbuch einer größeren Stadt. Papierstärke, Schriftgröße und Seitenformat sind nicht der Grund. Welche Einträge fehlen heute oft?",
+    "answer": "Viele private Festnetznummern, die früher öffentlich eingetragen waren.",
     "explanation": "Heute fehlen viele Mobilnummern oder sind nicht öffentlich eingetragen. Außerdem lassen Datenschutz und geänderte Gewohnheiten gedruckte Verzeichnisse schrumpfen."
   },
   {
@@ -277,9 +277,9 @@
   },
   {
     "id": "Q-47",
-    "text": "Ein Wanderer geht zehn Kilometer nach Süden, zehn Kilometer nach Osten und zehn Kilometer nach Norden. Danach steht er wieder am Startpunkt. Nenne einen möglichen Startpunkt.",
-    "answer": "Der Nordpol.",
-    "explanation": "Vom Nordpol führt jede Richtung zunächst nach Süden. Nach dem Ostweg auf einem Breitenkreis bringt der Weg nach Norden wieder zum Pol zurück."
+    "text": "In einem alten Kalender folgte in einem Land auf Donnerstag, den 4. Oktober, sofort Freitag, der 15. Oktober. Trotzdem dauerte die Nacht dazwischen nur eine Nacht. Was war passiert?",
+    "answer": "Eine Kalenderreform.",
+    "explanation": "Beim Wechsel vom julianischen zum gregorianischen Kalender wurden Datumszahlen übersprungen. Die tatsächliche Zeit sprang nicht, nur die Zählung der Tage wurde korrigiert."
   },
   {
     "id": "Q-48",
