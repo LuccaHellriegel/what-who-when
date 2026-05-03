@@ -1,58 +1,58 @@
-import { useEffect, useMemo, useState, type CSSProperties } from 'react'
-import { motion } from 'framer-motion'
-import questionsData from './questions.json'
-import './App.css'
+import { useEffect, useMemo, useState, type CSSProperties } from "react";
+import { motion } from "framer-motion";
+import questionsData from "./questions.json";
+import "./App.css";
 
 type Question = {
-  id: string
-  text: string
-  answer: string
-  explanation?: string
-  image?: string
-}
+  id: string;
+  text: string;
+  answer: string;
+  explanation?: string;
+  image?: string;
+};
 
-type Result = 'correct' | 'wrong' | 'skipped'
+type Result = "correct" | "wrong" | "skipped";
 
 type HistoryEntry = {
-  questionId: string
-  questionText: string
-  typedAnswer: string
-  officialAnswer: string
-  result: Result
-  timeUsed: number
-}
+  questionId: string;
+  questionText: string;
+  typedAnswer: string;
+  officialAnswer: string;
+  result: Result;
+  timeUsed: number;
+};
 
 type ActiveRound = {
-  question: Question
-  typedAnswer: string
-  remaining: number
-  revealed: boolean
-  paused: boolean
-}
+  question: Question;
+  typedAnswer: string;
+  remaining: number;
+  revealed: boolean;
+  paused: boolean;
+};
 
 type GameState = {
-  experts: number
-  viewers: number
-  usedQuestionIds: string[]
-  history: HistoryEntry[]
-  activeRound: ActiveRound | null
-  wheelRotation: number
-}
+  experts: number;
+  viewers: number;
+  usedQuestionIds: string[];
+  history: HistoryEntry[];
+  activeRound: ActiveRound | null;
+  wheelRotation: number;
+};
 
 type PastGame = {
-  id: string
-  playedAt: string
-  experts: number
-  viewers: number
-  history: HistoryEntry[]
-}
+  id: string;
+  playedAt: string;
+  experts: number;
+  viewers: number;
+  history: HistoryEntry[];
+};
 
-const QUESTIONS = questionsData as Question[]
-const STORAGE_KEY = 'what-who-when-nastia-game'
-const ARCHIVE_STORAGE_KEY = 'what-who-when-nastia-past-games'
-const TIMER_SECONDS = 60
-const WIN_SCORE = 6
-const SECTOR_COUNT = 12
+const QUESTIONS = questionsData as Question[];
+const STORAGE_KEY = "what-who-when-nastia-game";
+const ARCHIVE_STORAGE_KEY = "what-who-when-nastia-past-games";
+const TIMER_SECONDS = 60;
+const WIN_SCORE = 6;
+const SECTOR_COUNT = 12;
 
 const emptyGame: GameState = {
   experts: 0,
@@ -61,17 +61,17 @@ const emptyGame: GameState = {
   history: [],
   activeRound: null,
   wheelRotation: 0,
-}
+};
 
 function loadGame(): GameState {
   try {
-    const stored = window.localStorage.getItem(STORAGE_KEY)
+    const stored = window.localStorage.getItem(STORAGE_KEY);
 
     if (!stored) {
-      return emptyGame
+      return emptyGame;
     }
 
-    const parsed = JSON.parse(stored) as GameState
+    const parsed = JSON.parse(stored) as GameState;
 
     return {
       ...emptyGame,
@@ -79,90 +79,90 @@ function loadGame(): GameState {
       activeRound: parsed.activeRound
         ? { ...parsed.activeRound, paused: true }
         : null,
-    }
+    };
   } catch {
-    return emptyGame
+    return emptyGame;
   }
 }
 
 function loadPastGames(): PastGame[] {
   try {
-    const stored = window.localStorage.getItem(ARCHIVE_STORAGE_KEY)
+    const stored = window.localStorage.getItem(ARCHIVE_STORAGE_KEY);
 
     if (!stored) {
-      return []
+      return [];
     }
 
-    const parsed = JSON.parse(stored) as PastGame[]
+    const parsed = JSON.parse(stored) as PastGame[];
 
-    return Array.isArray(parsed) ? parsed : []
+    return Array.isArray(parsed) ? parsed : [];
   } catch {
-    return []
+    return [];
   }
 }
 
 function formatTime(seconds: number) {
-  return `0:${String(seconds).padStart(2, '0')}`
+  return `0:${String(seconds).padStart(2, "0")}`;
 }
 
 function formatDate(value: string) {
   return new Intl.DateTimeFormat(undefined, {
-    dateStyle: 'medium',
-    timeStyle: 'short',
-  }).format(new Date(value))
+    dateStyle: "medium",
+    timeStyle: "short",
+  }).format(new Date(value));
 }
 
 function statusLabel(result: Result) {
-  if (result === 'correct') {
-    return 'Correct'
+  if (result === "correct") {
+    return "Correct";
   }
 
-  if (result === 'wrong') {
-    return 'Wrong'
+  if (result === "wrong") {
+    return "Wrong";
   }
 
-  return 'Skipped'
+  return "Skipped";
 }
 
 function statusIcon(result: Result) {
-  if (result === 'correct') {
-    return '✓'
+  if (result === "correct") {
+    return "✓";
   }
 
-  if (result === 'wrong') {
-    return '×'
+  if (result === "wrong") {
+    return "×";
   }
 
-  return '↷'
+  return "↷";
 }
 
 function App() {
-  const [game, setGame] = useState<GameState>(() => loadGame())
-  const [pastGames, setPastGames] = useState<PastGame[]>(() => loadPastGames())
-  const [spinning, setSpinning] = useState(false)
-  const [archiveOpen, setArchiveOpen] = useState(false)
-  const [viewedPastGameId, setViewedPastGameId] = useState<string | null>(null)
+  const [game, setGame] = useState<GameState>(() => loadGame());
+  const [pastGames, setPastGames] = useState<PastGame[]>(() => loadPastGames());
+  const [spinning, setSpinning] = useState(false);
+  const [archiveOpen, setArchiveOpen] = useState(false);
+  const [viewedPastGameId, setViewedPastGameId] = useState<string | null>(null);
 
   const viewedPastGame =
-    pastGames.find((pastGame) => pastGame.id === viewedPastGameId) ?? null
-  const isViewingPast = Boolean(viewedPastGame)
-  const displayedExperts = viewedPastGame?.experts ?? game.experts
-  const displayedViewers = viewedPastGame?.viewers ?? game.viewers
-  const displayedHistory = viewedPastGame?.history ?? game.history
-  const roundNumber = game.history.length + (game.activeRound ? 1 : 0) + 1
-  const activeRoundNumber = game.history.length + 1
+    pastGames.find((pastGame) => pastGame.id === viewedPastGameId) ?? null;
+  const isViewingPast = Boolean(viewedPastGame);
+  const displayedExperts = viewedPastGame?.experts ?? game.experts;
+  const displayedViewers = viewedPastGame?.viewers ?? game.viewers;
+  const displayedHistory = viewedPastGame?.history ?? game.history;
+  const roundNumber = game.history.length + (game.activeRound ? 1 : 0) + 1;
+  const activeRoundNumber = game.history.length + 1;
   const winner =
     game.experts >= WIN_SCORE
-      ? 'Experts'
+      ? "Experts"
       : game.viewers >= WIN_SCORE
-        ? 'Viewers'
-        : null
+        ? "Viewers"
+        : null;
   const displayedWinner =
     displayedExperts >= WIN_SCORE
-      ? 'Experts'
+      ? "Experts"
       : displayedViewers >= WIN_SCORE
-        ? 'Viewers'
-        : null
+        ? "Viewers"
+        : null;
 
   const unusedQuestions = useMemo(
     () =>
@@ -170,18 +170,15 @@ function App() {
         (question) => !game.usedQuestionIds.includes(question.id),
       ),
     [game.usedQuestionIds],
-  )
+  );
 
   useEffect(() => {
-    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(game))
-  }, [game])
+    window.localStorage.setItem(STORAGE_KEY, JSON.stringify(game));
+  }, [game]);
 
   useEffect(() => {
-    window.localStorage.setItem(
-      ARCHIVE_STORAGE_KEY,
-      JSON.stringify(pastGames),
-    )
-  }, [pastGames])
+    window.localStorage.setItem(ARCHIVE_STORAGE_KEY, JSON.stringify(pastGames));
+  }, [pastGames]);
 
   useEffect(() => {
     if (
@@ -190,13 +187,13 @@ function App() {
       game.activeRound.revealed ||
       game.activeRound.remaining <= 0
     ) {
-      return undefined
+      return undefined;
     }
 
     const timer = window.setInterval(() => {
       setGame((current) => {
         if (!current.activeRound || current.activeRound.paused) {
-          return current
+          return current;
         }
 
         return {
@@ -205,12 +202,12 @@ function App() {
             ...current.activeRound,
             remaining: Math.max(0, current.activeRound.remaining - 1),
           },
-        }
-      })
-    }, 1000)
+        };
+      });
+    }, 1000);
 
-    return () => window.clearInterval(timer)
-  }, [game.activeRound])
+    return () => window.clearInterval(timer);
+  }, [game.activeRound]);
 
   function startNewGame() {
     if (game.history.length > 0) {
@@ -220,24 +217,24 @@ function App() {
         experts: game.experts,
         viewers: game.viewers,
         history: game.history,
-      }
+      };
 
-      setPastGames((current) => [archivedGame, ...current].slice(0, 12))
+      setPastGames((current) => [archivedGame, ...current].slice(0, 12));
     }
 
-    setSpinning(false)
-    setViewedPastGameId(null)
-    setGame(emptyGame)
+    setSpinning(false);
+    setViewedPastGameId(null);
+    setGame(emptyGame);
   }
 
   function openPastGame(id: string) {
-    setViewedPastGameId(id)
-    setArchiveOpen(false)
+    setViewedPastGameId(id);
+    setArchiveOpen(false);
   }
 
   function returnToCurrentGame() {
-    setViewedPastGameId(null)
-    setArchiveOpen(false)
+    setViewedPastGameId(null);
+    setArchiveOpen(false);
   }
 
   function spinWheel() {
@@ -248,65 +245,65 @@ function App() {
       winner ||
       unusedQuestions.length === 0
     ) {
-      return
+      return;
     }
 
     const question =
-      unusedQuestions[Math.floor(Math.random() * unusedQuestions.length)]
-    const sector = Math.floor(Math.random() * SECTOR_COUNT)
-    const extraTurns = 2 + Math.floor(Math.random() * 3)
+      unusedQuestions[Math.floor(Math.random() * unusedQuestions.length)];
+    const sector = Math.floor(Math.random() * SECTOR_COUNT);
+    const extraTurns = 2 + Math.floor(Math.random() * 3);
     const nextRotation =
-      game.wheelRotation + extraTurns * 360 + sector * (360 / SECTOR_COUNT)
+      game.wheelRotation + extraTurns * 360 + sector * (360 / SECTOR_COUNT);
 
-    setSpinning(true)
-    setGame((current) => ({ ...current, wheelRotation: nextRotation }))
+    setSpinning(true);
+    setGame((current) => ({ ...current, wheelRotation: nextRotation }));
 
     window.setTimeout(() => {
       setGame((current) => ({
         ...current,
         activeRound: {
           question,
-          typedAnswer: '',
+          typedAnswer: "",
           remaining: TIMER_SECONDS,
           revealed: false,
           paused: false,
         },
         usedQuestionIds: [...current.usedQuestionIds, question.id],
-      }))
-      setSpinning(false)
-    }, 1800)
+      }));
+      setSpinning(false);
+    }, 1800);
   }
 
   function updateTypedAnswer(typedAnswer: string) {
     setGame((current) => {
       if (!current.activeRound) {
-        return current
+        return current;
       }
 
       return {
         ...current,
         activeRound: { ...current.activeRound, typedAnswer },
-      }
-    })
+      };
+    });
   }
 
   function setPaused(paused: boolean) {
     setGame((current) => {
       if (!current.activeRound || current.activeRound.revealed) {
-        return current
+        return current;
       }
 
       return {
         ...current,
         activeRound: { ...current.activeRound, paused },
-      }
-    })
+      };
+    });
   }
 
   function revealAnswer() {
     setGame((current) => {
       if (!current.activeRound) {
-        return current
+        return current;
       }
 
       return {
@@ -316,17 +313,17 @@ function App() {
           revealed: true,
           paused: true,
         },
-      }
-    })
+      };
+    });
   }
 
   function finishRound(result: Result) {
     setGame((current) => {
       if (!current.activeRound) {
-        return current
+        return current;
       }
 
-      const { question, typedAnswer, remaining } = current.activeRound
+      const { question, typedAnswer, remaining } = current.activeRound;
       const entry: HistoryEntry = {
         questionId: question.id,
         questionText: question.text,
@@ -334,16 +331,16 @@ function App() {
         officialAnswer: question.answer,
         result,
         timeUsed: TIMER_SECONDS - remaining,
-      }
+      };
 
       return {
         ...current,
-        experts: current.experts + (result === 'correct' ? 1 : 0),
-        viewers: current.viewers + (result === 'wrong' ? 1 : 0),
+        experts: current.experts + (result === "correct" ? 1 : 0),
+        viewers: current.viewers + (result === "wrong" ? 1 : 0),
         history: [...current.history, entry],
         activeRound: null,
-      }
-    })
+      };
+    });
   }
 
   return (
@@ -352,7 +349,7 @@ function App() {
         <p className="kicker">Birthday Game Night</p>
         <h1>
           Что? Где? Когда?
-          <span>Nastia Edition</span>
+          <span>Nasty Quest Edition</span>
         </h1>
       </header>
 
@@ -369,7 +366,7 @@ function App() {
           <strong>{displayedViewers}</strong>
         </div>
         <span className="round-pill">
-          {isViewingPast ? 'Past game' : `Round ${activeRoundNumber}`}
+          {isViewingPast ? "Past game" : `Round ${activeRoundNumber}`}
         </span>
         <button
           type="button"
@@ -392,8 +389,7 @@ function App() {
         >
           <p>{displayedWinner} win 6 points.</p>
           <strong>
-            Final score: Experts {displayedExperts} — {displayedViewers}{' '}
-            Viewers
+            Final score: Experts {displayedExperts} — {displayedViewers} Viewers
           </strong>
         </motion.section>
       )}
@@ -420,7 +416,7 @@ function App() {
                 key={index}
                 style={
                   {
-                    '--sector-angle': `${index * (360 / SECTOR_COUNT)}deg`,
+                    "--sector-angle": `${index * (360 / SECTOR_COUNT)}deg`,
                   } as CSSProperties
                 }
               >
@@ -428,12 +424,12 @@ function App() {
               </span>
             ))}
             <strong>
-              {isViewingPast ? 'Past' : spinning ? 'Spinning' : 'Spin'}
+              {isViewingPast ? "Past" : spinning ? "Spinning" : "Spin"}
             </strong>
           </motion.button>
           <p className="wheel-caption">
             {isViewingPast
-              ? 'Viewing archived game'
+              ? "Viewing archived game"
               : `${unusedQuestions.length} unused questions remain`}
           </p>
         </section>
@@ -443,12 +439,12 @@ function App() {
             <div className="empty-question past-view">
               <p>{formatDate(viewedPastGame.playedAt)}</p>
               <h2>
-                Archived game: Experts {viewedPastGame.experts} —{' '}
+                Archived game: Experts {viewedPastGame.experts} —{" "}
                 {viewedPastGame.viewers} Viewers
               </h2>
               <span>
-                {viewedPastGame.history.length} completed rounds. Use the
-                bottom history drawer to inspect answers from this game.
+                {viewedPastGame.history.length} completed rounds. Use the bottom
+                history drawer to inspect answers from this game.
               </span>
               <button
                 type="button"
@@ -476,7 +472,7 @@ function App() {
               )}
 
               <div
-                className={`timer ${game.activeRound.remaining === 0 ? 'is-zero' : ''}`}
+                className={`timer ${game.activeRound.remaining === 0 ? "is-zero" : ""}`}
                 aria-live="polite"
               >
                 <strong>{formatTime(game.activeRound.remaining)}</strong>
@@ -513,14 +509,14 @@ function App() {
                     type="button"
                     className={
                       game.activeRound.remaining === 0
-                        ? 'primary-button emphasis-button'
-                        : 'primary-button'
+                        ? "primary-button emphasis-button"
+                        : "primary-button"
                     }
                     onClick={revealAnswer}
                   >
                     Reveal Answer
                   </button>
-                  <button type="button" onClick={() => finishRound('skipped')}>
+                  <button type="button" onClick={() => finishRound("skipped")}>
                     Skip
                   </button>
                 </div>
@@ -539,20 +535,20 @@ function App() {
                     <button
                       type="button"
                       className="success-button"
-                      onClick={() => finishRound('correct')}
+                      onClick={() => finishRound("correct")}
                     >
                       Correct
                     </button>
                     <button
                       type="button"
                       className="danger-button"
-                      onClick={() => finishRound('wrong')}
+                      onClick={() => finishRound("wrong")}
                     >
                       Wrong
                     </button>
                     <button
                       type="button"
-                      onClick={() => finishRound('skipped')}
+                      onClick={() => finishRound("skipped")}
                     >
                       Skip
                     </button>
@@ -563,11 +559,11 @@ function App() {
           ) : (
             <div className="empty-question">
               <p>Round {roundNumber}</p>
-              <h2>{winner ? 'Game complete' : 'Spin the wheel'}</h2>
+              <h2>{winner ? "Game complete" : "Spin the wheel"}</h2>
               <span>
                 {winner
-                  ? 'Start a new game to play again.'
-                  : 'A random unused question will appear here.'}
+                  ? "Start a new game to play again."
+                  : "A random unused question will appear here."}
               </span>
             </div>
           )}
@@ -576,7 +572,7 @@ function App() {
 
       <section className="history-drawer" aria-label="History drawer">
         <div className="history-title">
-          <h2>{isViewingPast ? 'Past Game History' : 'History'}</h2>
+          <h2>{isViewingPast ? "Past Game History" : "History"}</h2>
           <span>
             {displayedHistory.length} rounds · {pastGames.length} archived
           </span>
@@ -584,7 +580,7 @@ function App() {
         <div className="history-list">
           {displayedHistory.map((entry, index) => (
             <details
-              key={`${viewedPastGame?.id ?? 'current'}-${entry.questionId}`}
+              key={`${viewedPastGame?.id ?? "current"}-${entry.questionId}`}
               className={`history-row ${entry.result}`}
             >
               <summary>
@@ -596,7 +592,7 @@ function App() {
               <dl>
                 <div>
                   <dt>Typed answer</dt>
-                  <dd>{entry.typedAnswer || 'No answer typed'}</dd>
+                  <dd>{entry.typedAnswer || "No answer typed"}</dd>
                 </div>
                 <div>
                   <dt>Official answer</dt>
@@ -631,10 +627,10 @@ function App() {
           <motion.aside
             className="archive-drawer"
             aria-label="Game archive"
-            initial={{ x: '100%' }}
+            initial={{ x: "100%" }}
             animate={{ x: 0 }}
-            exit={{ x: '100%' }}
-            transition={{ duration: 0.22, ease: 'easeOut' }}
+            exit={{ x: "100%" }}
+            transition={{ duration: 0.22, ease: "easeOut" }}
           >
             <div className="archive-header">
               <div>
@@ -652,7 +648,7 @@ function App() {
 
             <button
               type="button"
-              className={`archive-game-button ${!isViewingPast ? 'is-active' : ''}`}
+              className={`archive-game-button ${!isViewingPast ? "is-active" : ""}`}
               onClick={returnToCurrentGame}
             >
               <span>Current game</span>
@@ -668,7 +664,7 @@ function App() {
                   type="button"
                   key={pastGame.id}
                   className={`archive-game-button ${
-                    viewedPastGameId === pastGame.id ? 'is-active' : ''
+                    viewedPastGameId === pastGame.id ? "is-active" : ""
                   }`}
                   onClick={() => openPastGame(pastGame.id)}
                 >
@@ -677,8 +673,8 @@ function App() {
                     {pastGame.experts} — {pastGame.viewers}
                   </strong>
                   <small>
-                    {formatDate(pastGame.playedAt)} ·{' '}
-                    {pastGame.history.length} rounds
+                    {formatDate(pastGame.playedAt)} · {pastGame.history.length}{" "}
+                    rounds
                   </small>
                 </button>
               ))}
@@ -692,7 +688,7 @@ function App() {
         </>
       )}
     </main>
-  )
+  );
 }
 
-export default App
+export default App;
